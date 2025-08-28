@@ -24,7 +24,7 @@ export default function Hero({ youTubeId }: { youTubeId: string }) {
   }, []);
 
   // Mobile-optimized parameters for autoplay
-  const mobileParams = "autoplay=1&mute=1&controls=0&playsinline=1&loop=1&playlist=" + youTubeId + "&modestbranding=1&rel=0&start=11&enablejsapi=1&origin=" + window.location.origin;
+  const mobileParams = "autoplay=1&mute=1&controls=0&playsinline=1&loop=1&playlist=" + youTubeId + "&modestbranding=1&rel=0&start=11&enablejsapi=1&origin=" + (typeof window !== 'undefined' ? window.location.origin : 'https://pulsebeat-global.com');
   const desktopParams = "autoplay=1&mute=1&controls=0&playsinline=1&loop=1&playlist=" + youTubeId + "&modestbranding=1&rel=0&start=11";
   
   const src = `https://www.youtube-nocookie.com/embed/${youTubeId}?${isMobile ? mobileParams : desktopParams}`;
