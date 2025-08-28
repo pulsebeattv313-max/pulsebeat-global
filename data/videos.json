@@ -1,0 +1,307 @@
+{
+  "hero": {
+    "youTubeId": "WOCUYdKakN8",
+    "title": "Pulsebeat Global Showcase",
+    "description": "A quick cut of celebrity moments and original programming from The Pulsebeat TV."
+  },
+  "celebrities": [
+    { 
+      "id": "c3", 
+      "title": "Honoring Extraordinary Talents: Montell Jordan, Mavis Staples & Malcolm-Jamal Warner", 
+      "youTubeId": "gKTenKGHoG4", 
+      "tags": ["celebrity", "montell-jordan", "mavis-staples", "malcolm-jamal-warner", "tribute", "honor", "singer", "actor", "minister", "soul", "poet", "exclusive", "pulsebeat-tv", "entertainment", "arts", "culture"],
+      "description": "This week, we honored three extraordinary talents: singer/actor/minister Montell Jordan, legendary soul songstress Mavis Staples, and the late, great actor and poet Malcolm-Jamal Warner. Each represents the passion, purpose, and creative excellence that inspire our ongoing celebration of the arts, entertainment, culture, and celebrity."
+    },
+    { 
+      "id": "c4", 
+      "title": "Mike Epps Opens Up About Katt Williams at 'One Mike' Club Opening in Detroit", 
+      "youTubeId": "5rTk7kh7JH8", 
+      "tags": ["celebrity", "mike-epps", "katt-williams", "comedy", "stand-up", "detroit", "club-opening", "one-mike", "day-day", "shannon-sharp", "shay-shay", "exclusive", "pulsebeat-tv", "entertainment", "interview"],
+      "description": "Mike Epps stand-up comedian opens up about Katt Williams at his 'One Mike' club opening in Detroit. The Mike Epps' Day-Day (Jones) Room answers the Shannon Sharp- Shay-Shay Room."
+    },
+    { 
+      "id": "c5", 
+      "title": "Jo Thompson Proves The Best Is Yet To Come - Forever Fabulous at 82", 
+      "youTubeId": "eo84meCumuE", 
+      "tags": ["celebrity", "jo-thompson", "jazz", "pianist", "singer", "grammy", "naras", "detroit", "miami-beach", "carnegie-hall", "lincoln-center", "blue-note", "lena-horne", "duke-ellington", "tony-bennett", "stevie-wonder", "forever-fabulous", "exclusive", "pulsebeat-tv", "entertainment", "music", "inspiration"],
+      "description": "Pianist and singer Ms. Jo Thompson proves that age 'ain't nothin' but a number!' At age 82, she joined NARAS and her CD 'Ms. Jo Thompson: Forever Fabulous' is in consideration for Grammy Awards. She was the first to perform 'For Once in My Life' in Detroit, performed at Carnegie Hall, Lincoln Center, and Blue Note Jazz Club. Currently performing 'Thank You Lena!!!' salute to Lena Horne."
+    },
+    { 
+      "id": "c6", 
+      "title": "George Benson Talks with Pulsebeat Media's Greg Dunmore at Detroit Jazz Fest", 
+      "youTubeId": "qJi5txQb0_o", 
+      "tags": ["celebrity", "george-benson", "greg-dunmore", "detroit-jazz-fest", "jazz", "guitarist", "singer", "interview", "detroit", "pulsebeat-media", "exclusive", "pulsebeat-tv", "entertainment", "music"],
+      "description": "Legendary guitarist and singer George Benson talks with Pulsebeat Media's Greg Dunmore in a rare upfront and personal interaction at the Detroit Jazz Fest."
+    },
+    { 
+      "id": "c7", 
+      "title": "MAKING MONEY, BASEBALL LEGENDS & A SURPRISE", 
+      "youTubeId": "HLQJWj3_Kwg", 
+      "tags": ["celebrity", "baseball", "legends", "money", "sports", "exclusive", "pulsebeat-tv", "entertainment", "interview"],
+      "description": "Making money, baseball legends and a surprise from Pulsebeat TV."
+    },
+    { 
+      "id": "c8", 
+      "title": "ONLY ON PULSEBEAT WITH GREG DUNMORE: SLY STONE", 
+      "youTubeId": "MVtWsKuDVBs", 
+      "tags": ["celebrity", "sly-stone", "greg-dunmore", "exclusive", "pulsebeat-tv", "entertainment", "music", "interview"],
+      "description": "Only on Pulsebeat with Greg Dunmore featuring Sly Stone."
+    },
+    { 
+      "id": "c9", 
+      "title": "HIP HOP & ROBERTA FLACK", 
+      "youTubeId": "Oq9b2blsFVM", 
+      "tags": ["celebrity", "roberta-flack", "hip-hop", "music", "exclusive", "pulsebeat-tv", "entertainment"],
+      "description": "Hip hop and Roberta Flack featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c10", 
+      "title": "WOW!! JAYNE KENNEDY", 
+      "youTubeId": "6212umNxDag", 
+      "tags": ["celebrity", "jayne-kennedy", "exclusive", "pulsebeat-tv", "entertainment", "interview"],
+      "description": "WOW!! Jayne Kennedy featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c11", 
+      "title": "MONTELL, MAVIS & MALCOLM", 
+      "youTubeId": "L-2VOY8jYbM", 
+      "tags": ["celebrity", "montell-jordan", "mavis-staples", "malcolm-jamal-warner", "exclusive", "pulsebeat-tv", "entertainment", "interview"],
+      "description": "Montell, Mavis & Malcolm featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c12", 
+      "title": "SHOES, SOFTWARE & STARS", 
+      "youTubeId": "lU68-8Rtmds", 
+      "tags": ["celebrity", "shoes", "software", "stars", "exclusive", "pulsebeat-tv", "entertainment", "lifestyle"],
+      "description": "Shoes, Software & Stars featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c13", 
+      "title": "MET GALA MADNESS", 
+      "youTubeId": "6hOykwo0lFpw", 
+      "tags": ["celebrity", "met-gala", "fashion", "exclusive", "pulsebeat-tv", "entertainment", "red-carpet"],
+      "description": "Met Gala Madness featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c14", 
+      "title": "HAPPY BIRTHDAY TO QUEEN ARETHA & ME", 
+      "youTubeId": "i4kMLUZngkA", 
+      "tags": ["celebrity", "aretha-franklin", "queen-aretha", "birthday", "exclusive", "pulsebeat-tv", "entertainment", "music"],
+      "description": "Happy Birthday to Queen Aretha & Me featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c15", 
+      "title": "AWESOME AL GREEN — HIS CRITICS SHOULD BE GREEN", 
+      "youTubeId": "9pPw-kDzG7Q", 
+      "tags": ["celebrity", "al-green", "music", "exclusive", "pulsebeat-tv", "entertainment", "soul"],
+      "description": "Awesome Al Green — His Critics Should Be Green featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c16", 
+      "title": "A RARE INTERVIEW WITH MISS ROBERTA FLACK", 
+      "youTubeId": "lOA_CxTyP6s", 
+      "tags": ["celebrity", "roberta-flack", "rare-interview", "exclusive", "pulsebeat-tv", "entertainment", "music"],
+      "description": "A Rare Interview with Miss Roberta Flack featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c17", 
+      "title": "FROM HIP‑HOP HISTORY TO HONORING ROBERTA FLACK", 
+      "youTubeId": "OkZPrIJjwCg", 
+      "tags": ["celebrity", "hip-hop-history", "roberta-flack", "exclusive", "pulsebeat-tv", "entertainment", "music"],
+      "description": "From Hip‑Hop History to Honoring Roberta Flack featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c18", 
+      "title": "FIGHT THE POWER: KENDRICK vs. DRAKE… OR A BIGGER BATTLE", 
+      "youTubeId": "LsePwrwxGUU", 
+      "tags": ["celebrity", "kendrick-lamar", "drake", "fight-the-power", "hip-hop", "exclusive", "pulsebeat-tv", "entertainment", "music"],
+      "description": "Fight the Power: Kendrick vs. Drake… Or a Bigger Battle featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c19", 
+      "title": "WHEN SINGERS SING YOUR PRAISE", 
+      "youTubeId": "Tn31X_K5vGQ", 
+      "tags": ["celebrity", "singers", "praise", "music", "exclusive", "pulsebeat-tv", "entertainment"],
+      "description": "When Singers Sing Your Praise featured on Pulsebeat TV."
+    }
+  ],
+  "originals": [
+    { 
+      "id": "o5", 
+      "title": "PULSEBEAT WITH GREG DUNMORE: Investigating Elvis Presley - Award-Winning TV Show", 
+      "youTubeId": "AWVCnsTa0-0", 
+      "tags": ["original-programming", "pulsebeat-tv", "greg-dunmore", "elvis-presley", "tv-show", "award-winning", "investigation", "abc", "wmyd", "detroit", "television", "broadcast", "exclusive", "entertainment", "documentary"],
+      "description": "A FASCINATING episode of the award-winning TV program 'PULSEBEAT WITH GREG DUNMORE' as it investigates a provocative question about the iconic Elvis Presley. Originally broadcast on SUNDAY MORNING MARCH 3, 2024, at 6:00AM (EST) on the ABC Metro-Detroit Affiliate Owned TV20 WMYD."
+    },
+    { 
+      "id": "o6", 
+      "title": "PULSEBEAT WITH GREG DUNMORE: Jazz and the NAACP - Detroit's WJZZ and Freedom Fund Dinner", 
+      "youTubeId": "_43zPH1YHeQ", 
+      "tags": ["original-programming", "pulsebeat-tv", "greg-dunmore", "jazz", "naacp", "detroit", "wjzz", "freedom-fund-dinner", "civil-rights", "nabj", "emmy-nominated", "award-winning", "abc", "wmyd", "tv33-whpr", "roland-martin", "wes-moore", "music-education", "television", "broadcast", "exclusive", "entertainment", "documentary"],
+      "description": "Jazz and the NAACP share a common brilliance — each is a rich, multifaceted force with layers of beauty, complexity, and power. Join us as PULSEBEAT WITH GREG DUNMORE explores jazz through the legacy of Detroit's WJZZ, the world's oldest jazz radio station, and highlights the vital work that the Detroit NAACP's Freedom Fund Dinner spotlights in addressing urgent issues and advancing civil rights. NABJ Salute to Excellence Award-winning and Emmy-nominated show."
+    },
+    { 
+      "id": "o7", 
+      "title": "THE ONE & ONLY PULSEBEAT WITH GREG DUNMORE TV", 
+      "youTubeId": "lDsX7HhRrv0", 
+      "tags": ["original-programming", "pulsebeat-tv", "greg-dunmore", "tv-show", "exclusive", "entertainment", "television"],
+      "description": "The one and only Pulsebeat with Greg Dunmore TV show."
+    },
+    { 
+      "id": "o8", 
+      "title": "PULSEBEAT: PASSION, POWER, PRIDE, PURPOSE", 
+      "youTubeId": "OkZN3EGTOQU", 
+      "tags": ["original-programming", "pulsebeat-tv", "passion", "power", "pride", "purpose", "exclusive", "entertainment"],
+      "description": "Pulsebeat: Passion, Power, Pride, Purpose programming."
+    },
+    { 
+      "id": "o9", 
+      "title": "PULSEBEAT WITH GREG DUNMORE: Dr. Asha Tyson on Wealth Building & Black Baseball History", 
+      "youTubeId": "kyxMP9r2vL4", 
+      "tags": ["original-programming", "pulsebeat-tv", "greg-dunmore", "dr-asha-tyson", "wealth-building", "early-retirement", "making-money", "black-baseball", "negro-baseball-history", "baseball-legends", "nabj", "emmy-nominated", "award-winning", "abc", "wmyd", "tv33-whpr", "detroit", "television", "broadcast", "exclusive", "entertainment", "documentary"],
+      "description": "Get ready for an unforgettable ride! This week on PULSEBEAT WITH GREG DUNMORE, we bring you the brilliance of Dr. Asha Tyson—one of today's most powerful voices on building wealth and creating a life of freedom. Then, we dive into the proud legacy of Black Baseball history, shining a spotlight on the legends who changed the game forever. NABJ Award-Winning & Emmy-Nominated show broadcast Sunday, August 17, 2025, 6:30–7:00 AM (EST) on Detroit's ABC affiliate TV20 WMYD."
+    },
+    { 
+      "id": "o10", 
+      "title": "Pulsebeat with Greg Dunmore Season 11 Episode 1", 
+      "youTubeId": "Y3L128dTSKl", 
+      "tags": ["original-programming", "pulsebeat-tv", "greg-dunmore", "season-11", "episode-1", "exclusive", "entertainment", "television"],
+      "description": "Pulsebeat with Greg Dunmore Season 11 Episode 1."
+    },
+    { 
+      "id": "o11", 
+      "title": "THE FOUR‑LETTER WORD WE LOVE TO SAY", 
+      "youTubeId": "HATtwUCS49M", 
+      "tags": ["original-programming", "pulsebeat-tv", "exclusive", "entertainment", "television"],
+      "description": "The Four‑Letter Word We Love to Say featured on Pulsebeat TV."
+    },
+    { 
+      "id": "o12", 
+      "title": "DON'T MISS THIS SPECIAL BROADCAST", 
+      "youTubeId": "ohHcY4009ms", 
+      "tags": ["original-programming", "pulsebeat-tv", "special-broadcast", "exclusive", "entertainment", "television"],
+      "description": "Don't Miss This Special Broadcast featured on Pulsebeat TV."
+    },
+    { 
+      "id": "o13", 
+      "title": "AN ENCORE PERFORMANCE", 
+      "youTubeId": "3s47UTRb1Ls", 
+      "tags": ["original-programming", "pulsebeat-tv", "encore", "performance", "exclusive", "entertainment", "television"],
+      "description": "An Encore Performance featured on Pulsebeat TV."
+    },
+    { 
+      "id": "o14", 
+      "title": "AN UNFORGETTABLE NABJ NATIONAL CONVENTION", 
+      "youTubeId": "zI56xAZuVe8", 
+      "tags": ["original-programming", "pulsebeat-tv", "nabj", "national-convention", "exclusive", "entertainment", "television"],
+      "description": "An Unforgettable NABJ National Convention featured on Pulsebeat TV."
+    }
+  ],
+  "culture": [
+    { 
+      "id": "n3", 
+      "title": "The Pulsebeat TV Culture Feature", 
+      "youTubeId": "vQdx8kDiJ6o", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "news", "feature"],
+      "description": "Culture and news feature from The Pulsebeat TV channel"
+    },
+    { 
+      "id": "n4", 
+      "title": "PARK, WALK, SHOP, DINE, EXPLORE… AND VOTE", 
+      "youTubeId": "Cjt9pWZTh18", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "lifestyle", "voting", "community", "exclusive", "entertainment"],
+      "description": "Park, walk, shop, dine, explore and vote - community and lifestyle content from Pulsebeat TV."
+    },
+    { 
+      "id": "n5", 
+      "title": "FROM FINE DINING TO GREAT GREENS", 
+      "youTubeId": "8e29pBXEaYQ", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "fine-dining", "greens", "lifestyle", "exclusive", "entertainment"],
+      "description": "From Fine Dining to Great Greens featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n6", 
+      "title": "RIGHT ON DETROIT CITY CLERK JANICE WINFREY", 
+      "youTubeId": "iEuCYHN-XLQ", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "detroit", "janice-winfrey", "city-clerk", "politics", "exclusive", "entertainment"],
+      "description": "Right On Detroit City Clerk Janice Winfrey featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n7", 
+      "title": "LIGHT UP LIVERNOS", 
+      "youTubeId": "xuT-3VTbXmM", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "livernos", "detroit", "community", "exclusive", "entertainment"],
+      "description": "Light Up Livernos featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n8", 
+      "title": "DETROIT: A MUSIC MECCA", 
+      "youTubeId": "pBojgS-gzQ4", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "detroit", "music-mecca", "music", "exclusive", "entertainment"],
+      "description": "Detroit: A Music Mecca featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n9", 
+      "title": "21st Century Poets – Truth to Poetry", 
+      "youTubeId": "bgGhnhEMx1E", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "poetry", "21st-century", "exclusive", "entertainment", "arts"],
+      "description": "21st Century Poets – Truth to Poetry featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n10", 
+      "title": "DEI: BEAUTY IS IN THE EYE OF THE BEHOLDER", 
+      "youTubeId": "zwFxSTUkcnM", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "dei", "diversity", "equity", "inclusion", "beauty", "exclusive", "entertainment"],
+      "description": "DEI: Beauty is in the Eye of the Beholder featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n11", 
+      "title": "A BATTLE OF WORDS AND INJUSTICE", 
+      "youTubeId": "y08HxWcBBm8", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "battle", "words", "injustice", "exclusive", "entertainment"],
+      "description": "A Battle of Words and Injustice featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n12", 
+      "title": "A CULINARY JOURNEY", 
+      "youTubeId": "vZuxig1BcS8", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "culinary", "food", "journey", "exclusive", "entertainment"],
+      "description": "A Culinary Journey featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n13", 
+      "title": "FINE FOOD & FEELINGS", 
+      "youTubeId": "vj20Kz--zucY", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "fine-food", "feelings", "lifestyle", "exclusive", "entertainment"],
+      "description": "Fine Food & Feelings featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n14", 
+      "title": "THE QUESTION IS", 
+      "youTubeId": "2E7P4hY98GY", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "question", "exclusive", "entertainment"],
+      "description": "The Question Is featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n15", 
+      "title": "THE TIMES THEY ARE A‑CHANGIN'", 
+      "youTubeId": "95g-F1a4lEM", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "times-changing", "exclusive", "entertainment"],
+      "description": "The Times They Are A‑Changin' featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n16", 
+      "title": "THE UNIVERSAL LANGUAGE OF LOVE: DANCE EXCELLENCE", 
+      "youTubeId": "GA8zMbO18xU", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "dance", "love", "excellence", "arts", "exclusive", "entertainment"],
+      "description": "The Universal Language of Love: Dance Excellence featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n17", 
+      "title": "WITHOUT EQUALS: THE BLACK PANTHER, HATTIE, JESUS & JAMES", 
+      "youTubeId": "yn4V_6Decuo", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "black-panther", "hattie", "jesus", "james", "exclusive", "entertainment"],
+      "description": "Without Equals: The Black Panther, Hattie, Jesus & James featured on Pulsebeat TV."
+    }
+  ]
+}
