@@ -1,7 +1,7 @@
 {
   "hero": {
-    "youTubeId": "gKTenKGHoG4",
-    "title": "Prince and his maven Taja Sevelle",
+    "youTubeId": "7EAVHobG0hw",
+    "title": "Ayo and Teo Dancers on Pulsebeat tv",
     "description": "A quick cut of celebrity moments and original programming from The Pulsebeat TV."
   },
   "celebrities": [
@@ -95,6 +95,13 @@
       "youTubeId": "Tn31X_K5vGQ", 
       "tags": ["celebrity", "singers", "praise", "music", "exclusive", "pulsebeat-tv", "entertainment"],
       "description": "When Singers Sing Your Praise featured on Pulsebeat TV."
+    },
+    { 
+      "id": "c16", 
+      "title": "Ayo and Teo Dancers on Pulsebeat tv", 
+      "youTubeId": "7EAVHobG0hw", 
+      "tags": ["celebrity", "ayo-teo", "dancers", "dance", "entertainment", "exclusive", "pulsebeat-tv", "performance", "music"],
+      "description": "Ayo and Teo Dancers featured on Pulsebeat TV showcasing their incredible dance moves and talent."
     }
   ],
   "originals": [
