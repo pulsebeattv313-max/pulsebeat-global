@@ -95,17 +95,17 @@ export default function VideoRail({
         {/* Section Header */}
         <div className="flex items-start justify-between mb-8">
           <div>
-            <h2 className="text-3xl lg:text-4xl font-bold font-heading text-pb-white mb-2">
+            <h2 className="text-3xl lg:text-4xl font-bold font-heading text-pb-gray-900 mb-2">
               {title}
             </h2>
             {subtitle && (
-              <p className="text-pb-white/70 text-lg max-w-2xl">{subtitle}</p>
+              <p className="text-pb-gray-600 text-lg max-w-2xl">{subtitle}</p>
             )}
           </div>
           {ctaHref && ctaLabel && (
             <a 
               href={ctaHref} 
-              className="group flex items-center gap-2 px-6 py-3 rounded-lg bg-pb-gray-800/50 border border-pb-gray-700 text-pb-gold font-semibold hover:bg-pb-gold hover:text-pb-black transition-all duration-300 backdrop-blur-sm"
+              className="group flex items-center gap-2 px-6 py-3 rounded-lg bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gold font-semibold hover:bg-pb-gold hover:text-pb-gray-900 transition-all duration-300 backdrop-blur-sm"
             >
               {ctaLabel}
               <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-200" fill="currentColor" viewBox="0 0 20 20">
@@ -142,11 +142,11 @@ export default function VideoRail({
       {/* Section Header */}
       <div className="flex items-start justify-between mb-6">
         <div>
-          <h2 className="text-2xl lg:text-3xl font-bold font-heading text-pb-white mb-1">
+          <h2 className="text-2xl lg:text-3xl font-bold font-heading text-pb-gray-900 mb-1">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-pb-white/60 text-sm">{subtitle}</p>
+            <p className="text-pb-gray-500 text-sm">{subtitle}</p>
           )}
         </div>
         
@@ -168,7 +168,7 @@ export default function VideoRail({
             <div className="hidden lg:flex items-center gap-2">
               <button
                 onClick={() => scroll("left")}
-                className="p-2 rounded-full bg-pb-gray-800/50 border border-pb-gray-700 text-pb-white/60 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
+                className="p-2 rounded-full bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gray-600 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
                 aria-label="Scroll left"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -177,7 +177,7 @@ export default function VideoRail({
               </button>
               <button
                 onClick={() => scroll("right")}
-                className="p-2 rounded-full bg-pb-gray-800/50 border border-pb-gray-700 text-pb-white/60 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
+                className="p-2 rounded-full bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gray-600 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
                 aria-label="Scroll right"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -213,8 +213,8 @@ export default function VideoRail({
         </div>
         
         {/* Fade edges for rail */}
-        <div className="absolute top-0 left-0 bottom-4 w-8 bg-gradient-to-r from-pb-black to-transparent pointer-events-none" />
-        <div className="absolute top-0 right-0 bottom-4 w-8 bg-gradient-to-l from-pb-black to-transparent pointer-events-none" />
+        <div className="absolute top-0 left-0 bottom-4 w-8 bg-gradient-to-r from-pb-white to-transparent pointer-events-none" />
+        <div className="absolute top-0 right-0 bottom-4 w-8 bg-gradient-to-l from-pb-white to-transparent pointer-events-none" />
       </div>
       
       {/* Mobile CTA */}
@@ -222,7 +222,7 @@ export default function VideoRail({
         <div className="mt-6 sm:hidden">
           <a 
             href={ctaHref}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pb-gray-800/50 border border-pb-gray-700 text-pb-gold font-semibold hover:bg-pb-gold hover:text-pb-black transition-all duration-300 backdrop-blur-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gold font-semibold hover:bg-pb-gold hover:text-pb-gray-900 transition-all duration-300 backdrop-blur-sm"
           >
             {ctaLabel}
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

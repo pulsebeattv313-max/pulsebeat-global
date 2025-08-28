@@ -54,7 +54,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-pb-black">
+    <div className="min-h-screen bg-pb-white">
       {/* Hero Section */}
       <Hero youTubeId={heroId} />
       
@@ -95,13 +95,13 @@ export default function HomePage() {
       
       {/* Newsletter Signup Section */}
       <section className="mx-auto max-w-7xl px-4 lg:px-8 mt-24 mb-16">
-        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-pb-purple/20 via-pb-gold/10 to-pb-accent/20 border border-pb-gold/20 backdrop-blur-sm">
-          <div className="absolute inset-0 bg-gradient-to-br from-pb-black/80 via-pb-black/60 to-pb-black/80"></div>
+        <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-pb-purple/10 via-pb-gold/5 to-pb-accent/10 border border-pb-gold/20 backdrop-blur-sm">
+          <div className="absolute inset-0 bg-gradient-to-br from-pb-white/80 via-pb-white/60 to-pb-white/80"></div>
           <div className="relative z-10 px-8 py-16 text-center">
-            <h2 className="text-3xl lg:text-4xl font-bold font-heading text-pb-white mb-4">
+            <h2 className="text-3xl lg:text-4xl font-bold font-heading text-pb-gray-900 mb-4">
               Never Miss a <span className="text-transparent bg-clip-text bg-gradient-to-r from-pb-gold to-pb-accent">Pulsebeat</span>
             </h2>
-            <p className="text-lg text-pb-white/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg text-pb-gray-700 mb-8 max-w-2xl mx-auto">
               Get exclusive content, early access to new shows, and behind-the-scenes moments 
               delivered directly to your inbox.
             </p>
@@ -109,13 +109,13 @@ export default function HomePage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-6 py-4 rounded-lg bg-pb-gray-800/50 border border-pb-gray-700 text-pb-white placeholder-pb-white/50 focus:border-pb-gold focus:ring-2 focus:ring-pb-gold/20 focus:outline-none transition-all duration-200"
+                className="w-full px-6 py-4 rounded-lg bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gray-900 placeholder-pb-gray-500 focus:border-pb-gold focus:ring-2 focus:ring-pb-gold/20 focus:outline-none transition-all duration-200"
               />
-              <button className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-pb-gold to-pb-gold-light text-pb-black font-bold hover:shadow-glow transition-all duration-300 hover:scale-105">
+              <button className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-pb-gold to-pb-gold-light text-pb-gray-900 font-bold hover:shadow-glow transition-all duration-300 hover:scale-105">
                 Subscribe
               </button>
             </div>
-            <p className="text-xs text-pb-white/50 mt-4">
+            <p className="text-xs text-pb-gray-500 mt-4">
               No spam. Unsubscribe anytime. Your privacy is protected.
             </p>
           </div>
