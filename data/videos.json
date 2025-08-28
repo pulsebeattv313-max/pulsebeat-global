@@ -1,7 +1,7 @@
 {
   "hero": {
-    "youTubeId": "WOCUYdKakN8",
-    "title": "Pulsebeat Global Showcase",
+    "youTubeId": "gKTenKGHoG4",
+    "title": "Prince and his maven Taja Sevelle",
     "description": "A quick cut of celebrity moments and original programming from The Pulsebeat TV."
   },
   "celebrities": [
@@ -70,55 +70,27 @@
     },
     { 
       "id": "c12", 
-      "title": "SHOES, SOFTWARE & STARS", 
-      "youTubeId": "lU68-8Rtmds", 
-      "tags": ["celebrity", "shoes", "software", "stars", "exclusive", "pulsebeat-tv", "entertainment", "lifestyle"],
-      "description": "Shoes, Software & Stars featured on Pulsebeat TV."
-    },
-    { 
-      "id": "c13", 
-      "title": "MET GALA MADNESS", 
-      "youTubeId": "6hOykwo0lFpw", 
-      "tags": ["celebrity", "met-gala", "fashion", "exclusive", "pulsebeat-tv", "entertainment", "red-carpet"],
-      "description": "Met Gala Madness featured on Pulsebeat TV."
-    },
-    { 
-      "id": "c14", 
       "title": "HAPPY BIRTHDAY TO QUEEN ARETHA & ME", 
       "youTubeId": "i4kMLUZngkA", 
       "tags": ["celebrity", "aretha-franklin", "queen-aretha", "birthday", "exclusive", "pulsebeat-tv", "entertainment", "music"],
       "description": "Happy Birthday to Queen Aretha & Me featured on Pulsebeat TV."
     },
     { 
-      "id": "c15", 
+      "id": "c13", 
       "title": "AWESOME AL GREEN — HIS CRITICS SHOULD BE GREEN", 
       "youTubeId": "9pPw-kDzG7Q", 
       "tags": ["celebrity", "al-green", "music", "exclusive", "pulsebeat-tv", "entertainment", "soul"],
       "description": "Awesome Al Green — His Critics Should Be Green featured on Pulsebeat TV."
     },
     { 
-      "id": "c16", 
-      "title": "A RARE INTERVIEW WITH MISS ROBERTA FLACK", 
-      "youTubeId": "lOA_CxTyP6s", 
-      "tags": ["celebrity", "roberta-flack", "rare-interview", "exclusive", "pulsebeat-tv", "entertainment", "music"],
-      "description": "A Rare Interview with Miss Roberta Flack featured on Pulsebeat TV."
-    },
-    { 
-      "id": "c17", 
-      "title": "FROM HIP‑HOP HISTORY TO HONORING ROBERTA FLACK", 
-      "youTubeId": "OkZPrIJjwCg", 
-      "tags": ["celebrity", "hip-hop-history", "roberta-flack", "exclusive", "pulsebeat-tv", "entertainment", "music"],
-      "description": "From Hip‑Hop History to Honoring Roberta Flack featured on Pulsebeat TV."
-    },
-    { 
-      "id": "c18", 
+      "id": "c14", 
       "title": "FIGHT THE POWER: KENDRICK vs. DRAKE… OR A BIGGER BATTLE", 
       "youTubeId": "LsePwrwxGUU", 
       "tags": ["celebrity", "kendrick-lamar", "drake", "fight-the-power", "hip-hop", "exclusive", "pulsebeat-tv", "entertainment", "music"],
       "description": "Fight the Power: Kendrick vs. Drake… Or a Bigger Battle featured on Pulsebeat TV."
     },
     { 
-      "id": "c19", 
+      "id": "c15", 
       "title": "WHEN SINGERS SING YOUR PRAISE", 
       "youTubeId": "Tn31X_K5vGQ", 
       "tags": ["celebrity", "singers", "praise", "music", "exclusive", "pulsebeat-tv", "entertainment"],
@@ -163,38 +135,17 @@
     },
     { 
       "id": "o10", 
-      "title": "Pulsebeat with Greg Dunmore Season 11 Episode 1", 
-      "youTubeId": "Y3L128dTSKl", 
-      "tags": ["original-programming", "pulsebeat-tv", "greg-dunmore", "season-11", "episode-1", "exclusive", "entertainment", "television"],
-      "description": "Pulsebeat with Greg Dunmore Season 11 Episode 1."
-    },
-    { 
-      "id": "o11", 
       "title": "THE FOUR‑LETTER WORD WE LOVE TO SAY", 
       "youTubeId": "HATtwUCS49M", 
       "tags": ["original-programming", "pulsebeat-tv", "exclusive", "entertainment", "television"],
       "description": "The Four‑Letter Word We Love to Say featured on Pulsebeat TV."
     },
     { 
-      "id": "o12", 
-      "title": "DON'T MISS THIS SPECIAL BROADCAST", 
-      "youTubeId": "ohHcY4009ms", 
-      "tags": ["original-programming", "pulsebeat-tv", "special-broadcast", "exclusive", "entertainment", "television"],
-      "description": "Don't Miss This Special Broadcast featured on Pulsebeat TV."
-    },
-    { 
-      "id": "o13", 
+      "id": "o11", 
       "title": "AN ENCORE PERFORMANCE", 
       "youTubeId": "3s47UTRb1Ls", 
       "tags": ["original-programming", "pulsebeat-tv", "encore", "performance", "exclusive", "entertainment", "television"],
       "description": "An Encore Performance featured on Pulsebeat TV."
-    },
-    { 
-      "id": "o14", 
-      "title": "AN UNFORGETTABLE NABJ NATIONAL CONVENTION", 
-      "youTubeId": "zI56xAZuVe8", 
-      "tags": ["original-programming", "pulsebeat-tv", "nabj", "national-convention", "exclusive", "entertainment", "television"],
-      "description": "An Unforgettable NABJ National Convention featured on Pulsebeat TV."
     }
   ],
   "culture": [
@@ -228,76 +179,48 @@
     },
     { 
       "id": "n7", 
-      "title": "LIGHT UP LIVERNOS", 
-      "youTubeId": "xuT-3VTbXmM", 
-      "tags": ["news-culture", "pulsebeat-tv", "culture", "livernos", "detroit", "community", "exclusive", "entertainment"],
-      "description": "Light Up Livernos featured on Pulsebeat TV."
-    },
-    { 
-      "id": "n8", 
       "title": "DETROIT: A MUSIC MECCA", 
       "youTubeId": "pBojgS-gzQ4", 
       "tags": ["news-culture", "pulsebeat-tv", "culture", "detroit", "music-mecca", "music", "exclusive", "entertainment"],
       "description": "Detroit: A Music Mecca featured on Pulsebeat TV."
     },
     { 
-      "id": "n9", 
+      "id": "n8", 
       "title": "21st Century Poets – Truth to Poetry", 
       "youTubeId": "bgGhnhEMx1E", 
       "tags": ["news-culture", "pulsebeat-tv", "culture", "poetry", "21st-century", "exclusive", "entertainment", "arts"],
       "description": "21st Century Poets – Truth to Poetry featured on Pulsebeat TV."
     },
     { 
-      "id": "n10", 
+      "id": "n9", 
       "title": "DEI: BEAUTY IS IN THE EYE OF THE BEHOLDER", 
       "youTubeId": "zwFxSTUkcnM", 
       "tags": ["news-culture", "pulsebeat-tv", "culture", "dei", "diversity", "equity", "inclusion", "beauty", "exclusive", "entertainment"],
       "description": "DEI: Beauty is in the Eye of the Beholder featured on Pulsebeat TV."
     },
     { 
-      "id": "n11", 
+      "id": "n10", 
       "title": "A BATTLE OF WORDS AND INJUSTICE", 
       "youTubeId": "y08HxWcBBm8", 
       "tags": ["news-culture", "pulsebeat-tv", "culture", "battle", "words", "injustice", "exclusive", "entertainment"],
       "description": "A Battle of Words and Injustice featured on Pulsebeat TV."
     },
     { 
-      "id": "n12", 
+      "id": "n11", 
       "title": "A CULINARY JOURNEY", 
       "youTubeId": "vZuxig1BcS8", 
       "tags": ["news-culture", "pulsebeat-tv", "culture", "culinary", "food", "journey", "exclusive", "entertainment"],
       "description": "A Culinary Journey featured on Pulsebeat TV."
     },
     { 
-      "id": "n13", 
-      "title": "FINE FOOD & FEELINGS", 
-      "youTubeId": "vj20Kz--zucY", 
-      "tags": ["news-culture", "pulsebeat-tv", "culture", "fine-food", "feelings", "lifestyle", "exclusive", "entertainment"],
-      "description": "Fine Food & Feelings featured on Pulsebeat TV."
-    },
-    { 
-      "id": "n14", 
+      "id": "n12", 
       "title": "THE QUESTION IS", 
       "youTubeId": "2E7P4hY98GY", 
       "tags": ["news-culture", "pulsebeat-tv", "culture", "question", "exclusive", "entertainment"],
       "description": "The Question Is featured on Pulsebeat TV."
     },
     { 
-      "id": "n15", 
-      "title": "THE TIMES THEY ARE A‑CHANGIN'", 
-      "youTubeId": "95g-F1a4lEM", 
-      "tags": ["news-culture", "pulsebeat-tv", "culture", "times-changing", "exclusive", "entertainment"],
-      "description": "The Times They Are A‑Changin' featured on Pulsebeat TV."
-    },
-    { 
-      "id": "n16", 
-      "title": "THE UNIVERSAL LANGUAGE OF LOVE: DANCE EXCELLENCE", 
-      "youTubeId": "GA8zMbO18xU", 
-      "tags": ["news-culture", "pulsebeat-tv", "culture", "dance", "love", "excellence", "arts", "exclusive", "entertainment"],
-      "description": "The Universal Language of Love: Dance Excellence featured on Pulsebeat TV."
-    },
-    { 
-      "id": "n17", 
+      "id": "n13", 
       "title": "WITHOUT EQUALS: THE BLACK PANTHER, HATTIE, JESUS & JAMES", 
       "youTubeId": "yn4V_6Decuo", 
       "tags": ["news-culture", "pulsebeat-tv", "culture", "black-panther", "hattie", "jesus", "james", "exclusive", "entertainment"],
