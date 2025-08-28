@@ -5,14 +5,29 @@ import { getHeroId } from "@/lib/videos";
 export default function Hero({ youTubeId }: { youTubeId: string }) {
   const [isLoaded, setIsLoaded] = useState(false);
   const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     setMounted(true);
     const timer = setTimeout(() => setIsLoaded(true), 100);
+    
+    // Check if mobile device
+    const checkMobile = () => {
+      const userAgent = navigator.userAgent || navigator.vendor || (window as any).opera;
+      const isMobileDevice = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(userAgent.toLowerCase());
+      setIsMobile(isMobileDevice);
+    };
+    
+    checkMobile();
+    
     return () => clearTimeout(timer);
   }, []);
 
-  const src = `https://www.youtube-nocookie.com/embed/${youTubeId}?autoplay=1&mute=1&controls=0&playsinline=1&loop=1&playlist=${youTubeId}&modestbranding=1&rel=0&start=11`;
+  // Mobile-optimized parameters for autoplay
+  const mobileParams = "autoplay=1&mute=1&controls=0&playsinline=1&loop=1&playlist=" + youTubeId + "&modestbranding=1&rel=0&start=11&enablejsapi=1&origin=" + window.location.origin;
+  const desktopParams = "autoplay=1&mute=1&controls=0&playsinline=1&loop=1&playlist=" + youTubeId + "&modestbranding=1&rel=0&start=11";
+  
+  const src = `https://www.youtube-nocookie.com/embed/${youTubeId}?${isMobile ? mobileParams : desktopParams}`;
 
   return (
     <section className="relative w-full h-screen overflow-hidden bg-pb-white pt-16 lg:pt-18">
@@ -22,9 +37,13 @@ export default function Hero({ youTubeId }: { youTubeId: string }) {
           className="absolute -top-20 w-full h-[calc(100%+40px)] object-cover scale-125"
           src={src}
           title="Pulsebeat Hero"
-          allow="autoplay; fullscreen; picture-in-picture"
+          allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
           referrerPolicy="strict-origin-when-cross-origin"
+          loading="eager"
         />
+        
+        {/* Fallback background for mobile or when video fails to load */}
+        <div className="absolute inset-0 bg-gradient-to-br from-pb-gold/20 via-pb-purple/10 to-pb-accent/20"></div>
       </div>
 
       {/* Overlay */}

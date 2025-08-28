@@ -28,6 +28,7 @@ export default function VideoCard({
   timeAgo
 }: Props) {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [imageError, setImageError] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [mounted, setMounted] = useState(false);
   
@@ -35,7 +36,14 @@ export default function VideoCard({
     setMounted(true);
   }, []);
   
-  const thumb = `https://i.ytimg.com/vi/${youTubeId}/hqdefault.jpg`;
+  // Generate multiple thumbnail qualities for better loading
+  const thumbnails = {
+    hq: `https://i.ytimg.com/vi/${youTubeId}/hqdefault.jpg`,
+    mq: `https://i.ytimg.com/vi/${youTubeId}/mqdefault.jpg`,
+    sd: `https://i.ytimg.com/vi/${youTubeId}/sddefault.jpg`,
+    maxres: `https://i.ytimg.com/vi/${youTubeId}/maxresdefault.jpg`
+  };
+  
   const link = `/watch/${id || youTubeId}`;
   
   const sizeClasses = {
@@ -65,6 +73,16 @@ export default function VideoCard({
 
   const duration = generateDuration(youTubeId);
 
+  const handleImageLoad = () => {
+    setIsImageLoaded(true);
+    setImageError(false);
+  };
+
+  const handleImageError = () => {
+    setImageError(true);
+    setIsImageLoaded(true);
+  };
+
   return (
     <Link 
       href={link} 
@@ -77,18 +95,57 @@ export default function VideoCard({
         <div className="relative overflow-hidden">
           {/* Thumbnail Image */}
           <div className={`relative ${aspectClasses[size]} bg-pb-gray-200 overflow-hidden`}>
-            <img 
-              src={thumb} 
-              alt={title} 
-              className={`w-full h-full object-cover transition-all duration-500 ${
-                isHovered ? 'scale-110' : 'scale-100'
-              } ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
-              onLoad={() => setIsImageLoaded(true)}
-            />
-            
             {/* Loading Skeleton */}
-            {!isImageLoaded && (
-              <div className="absolute inset-0 bg-pb-gray-200 animate-pulse" />
+            {!isImageLoaded && !imageError && (
+              <div className="absolute inset-0 bg-gradient-to-br from-pb-gray-200 to-pb-gray-300 animate-pulse">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pb-white/20 to-transparent animate-shimmer"></div>
+              </div>
+            )}
+            
+            {/* Error Fallback */}
+            {imageError && (
+              <div className="absolute inset-0 bg-gradient-to-br from-pb-gold/20 to-pb-purple/20 flex items-center justify-center">
+                <div className="text-center">
+                  <svg className="w-12 h-12 text-pb-gray-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                  </svg>
+                  <p className="text-xs text-pb-gray-500">Video Preview</p>
+                </div>
+              </div>
+            )}
+            
+            {/* Progressive Image Loading */}
+            {!imageError && (
+              <>
+                {/* Low quality placeholder */}
+                <img 
+                  src={thumbnails.mq}
+                  alt=""
+                  className="absolute inset-0 w-full h-full object-cover blur-sm scale-110 opacity-50"
+                  onLoad={() => {
+                    if (!isImageLoaded) {
+                      // Load high quality image
+                      const img = new Image();
+                      img.onload = handleImageLoad;
+                      img.onerror = handleImageError;
+                      img.src = thumbnails.hq;
+                    }
+                  }}
+                  onError={handleImageError}
+                />
+                
+                {/* High quality image */}
+                <img 
+                  src={thumbnails.hq}
+                  alt={title} 
+                  className={`w-full h-full object-cover transition-all duration-500 ${
+                    isHovered ? 'scale-110' : 'scale-100'
+                  } ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                  onLoad={handleImageLoad}
+                  onError={handleImageError}
+                  loading="lazy"
+                />
+              </>
             )}
             
             {/* Gradient Overlay */}
