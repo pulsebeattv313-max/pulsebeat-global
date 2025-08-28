@@ -31,19 +31,48 @@ export default function Hero({ youTubeId }: { youTubeId: string }) {
 
   return (
     <section className="relative w-full h-screen overflow-hidden bg-pb-white pt-16 lg:pt-18">
-      {/* Background Video */}
+      {/* Background - Video for Desktop, Graphic for Mobile */}
       <div className="absolute inset-0 top-16 lg:top-18 w-full h-full overflow-hidden">
-        <iframe
-          className="absolute -top-20 w-full h-[calc(100%+40px)] object-cover scale-125"
-          src={src}
-          title="Pulsebeat Hero"
-          allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
-          referrerPolicy="strict-origin-when-cross-origin"
-          loading="eager"
-        />
+        {/* Desktop Video Background */}
+        {!isMobile && (
+          <iframe
+            className="absolute -top-20 w-full h-[calc(100%+40px)] object-cover scale-125"
+            src={src}
+            title="Pulsebeat Hero"
+            allow="autoplay; fullscreen; picture-in-picture; encrypted-media"
+            referrerPolicy="strict-origin-when-cross-origin"
+            loading="eager"
+          />
+        )}
         
-        {/* Fallback background for mobile or when video fails to load */}
-        <div className="absolute inset-0 bg-gradient-to-br from-pb-gold/20 via-pb-purple/10 to-pb-accent/20"></div>
+        {/* Mobile Graphic Background */}
+        {isMobile && (
+          <div className="absolute inset-0 bg-gradient-to-br from-pb-gold/30 via-pb-purple/20 to-pb-accent/30">
+            {/* Animated background elements */}
+            <div className="absolute inset-0 overflow-hidden">
+              {/* Floating circles */}
+              <div className="absolute top-20 left-10 w-32 h-32 bg-pb-gold/20 rounded-full blur-xl animate-pulse"></div>
+              <div className="absolute top-40 right-20 w-24 h-24 bg-pb-purple/20 rounded-full blur-xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+              <div className="absolute bottom-32 left-1/4 w-40 h-40 bg-pb-accent/20 rounded-full blur-xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+              <div className="absolute bottom-20 right-1/3 w-28 h-28 bg-pb-gold/15 rounded-full blur-xl animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+              
+              {/* Geometric shapes */}
+              <div className="absolute top-1/4 left-1/2 w-16 h-16 bg-pb-purple/10 rotate-45 transform -translate-x-8 -translate-y-8"></div>
+              <div className="absolute bottom-1/3 right-1/4 w-12 h-12 bg-pb-accent/15 rotate-12 transform"></div>
+              
+              {/* Subtle grid pattern */}
+              <div className="absolute inset-0 opacity-5">
+                <div className="w-full h-full" style={{
+                  backgroundImage: `radial-gradient(circle at 1px 1px, rgba(212, 175, 55, 0.3) 1px, transparent 0)`,
+                  backgroundSize: '40px 40px'
+                }}></div>
+              </div>
+            </div>
+          </div>
+        )}
+        
+        {/* Fallback background for all devices */}
+        <div className="absolute inset-0 bg-gradient-to-br from-pb-gold/10 via-pb-purple/5 to-pb-accent/10"></div>
       </div>
 
       {/* Overlay */}
