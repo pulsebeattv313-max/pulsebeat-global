@@ -31,10 +31,10 @@ export default function TrendingSection({ items }: Props) {
       {/* Section Header */}
       <div className="flex items-start justify-between mb-6">
         <div>
-          <h2 className="text-2xl lg:text-3xl font-bold font-heading text-pb-gray-900 mb-1">
+          <h2 className="text-2xl lg:text-3xl font-bold font-heading text-pb-gray-900 dark:text-pb-white mb-1">
             Detroit Trending
           </h2>
-          <p className="text-pb-gray-500 text-sm">Latest and greatest from the Motor City</p>
+          <p className="text-pb-gray-500 dark:text-pb-gray-400 text-sm">Latest and greatest from the Motor City</p>
         </div>
         
         <div className="flex items-center gap-4">
@@ -52,7 +52,7 @@ export default function TrendingSection({ items }: Props) {
           <div className="hidden lg:flex items-center gap-2">
             <button
               onClick={() => scroll("left")}
-              className="p-2 rounded-full bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gray-600 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
+              className="p-2 rounded-full bg-pb-gray-100/50 dark:bg-pb-gray-800/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gray-600 dark:text-pb-gray-400 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
               aria-label="Scroll left"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -61,7 +61,7 @@ export default function TrendingSection({ items }: Props) {
             </button>
             <button
               onClick={() => scroll("right")}
-              className="p-2 rounded-full bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gray-600 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
+              className="p-2 rounded-full bg-pb-gray-100/50 dark:bg-pb-gray-800/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gray-600 dark:text-pb-gray-400 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
               aria-label="Scroll right"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -96,15 +96,15 @@ export default function TrendingSection({ items }: Props) {
         </div>
         
         {/* Fade edges for rail */}
-        <div className="absolute top-0 left-0 bottom-4 w-8 bg-gradient-to-r from-pb-white to-transparent pointer-events-none" />
-        <div className="absolute top-0 right-0 bottom-4 w-8 bg-gradient-to-l from-pb-white to-transparent pointer-events-none" />
+        <div className="absolute top-0 left-0 bottom-4 w-8 bg-gradient-to-r from-pb-white dark:from-pb-gray-900 to-transparent pointer-events-none" />
+        <div className="absolute top-0 right-0 bottom-4 w-8 bg-gradient-to-l from-pb-white dark:from-pb-gray-900 to-transparent pointer-events-none" />
       </div>
       
       {/* Mobile CTA */}
       <div className="mt-6 sm:hidden">
         <a 
           href="/news-culture"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gold font-semibold hover:bg-pb-gold hover:text-pb-gray-900 transition-all duration-300 backdrop-blur-sm"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pb-gray-100/50 dark:bg-pb-gray-800/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gold font-semibold hover:bg-pb-gold hover:text-pb-gray-900 transition-all duration-300 backdrop-blur-sm"
         >
           View all trending
           <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
