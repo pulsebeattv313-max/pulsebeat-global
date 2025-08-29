@@ -25,7 +25,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-pb-gray-50 border-t border-pb-gray-200">
+    <footer className="bg-pb-gray-50 dark:bg-pb-gray-900 border-t border-pb-gray-200 dark:border-pb-gray-700">
       <div className="max-w-7xl mx-auto px-4 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -34,9 +34,9 @@ export default function Footer() {
               <div className="relative w-8 h-8">
                 <img src="/logo.svg" alt="Pulsebeat Global" className="w-full h-full" />
               </div>
-              <span className="font-bold text-xl text-pb-gray-900">Pulsebeat Global</span>
+              <span className="font-bold text-xl text-pb-gray-900 dark:text-pb-white">Pulsebeat Global</span>
             </Link>
-            <p className="text-pb-gray-600 mb-6 max-w-sm">
+            <p className="text-pb-gray-600 dark:text-pb-gray-400 mb-6 max-w-sm">
               Your premier destination for exclusive celebrity interviews, award-winning original programming, 
               and cultural content that celebrates the arts, entertainment, and human spirit.
             </p>
@@ -45,13 +45,13 @@ export default function Footer() {
 
           {/* Content Links */}
           <div>
-            <h3 className="font-semibold text-pb-gray-900 mb-4">Content</h3>
+            <h3 className="font-semibold text-pb-gray-900 dark:text-pb-white mb-4">Content</h3>
             <ul className="space-y-3">
               {footerLinks.content.map((link) => (
                 <li key={link.href}>
                   <Link 
                     href={link.href}
-                    className="text-pb-gray-600 hover:text-pb-gold transition-colors duration-200"
+                    className="text-pb-gray-600 dark:text-pb-gray-400 hover:text-pb-gold transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -62,13 +62,13 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="font-semibold text-pb-gray-900 mb-4">Company</h3>
+            <h3 className="font-semibold text-pb-gray-900 dark:text-pb-white mb-4">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.href}>
                   <Link 
                     href={link.href}
-                    className="text-pb-gray-600 hover:text-pb-gold transition-colors duration-200"
+                    className="text-pb-gray-600 dark:text-pb-gray-400 hover:text-pb-gold transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -79,13 +79,13 @@ export default function Footer() {
 
           {/* Support Links */}
           <div>
-            <h3 className="font-semibold text-pb-gray-900 mb-4">Support</h3>
+            <h3 className="font-semibold text-pb-gray-900 dark:text-pb-white mb-4">Support</h3>
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.href}>
                   <Link 
                     href={link.href}
-                    className="text-pb-gray-600 hover:text-pb-gold transition-colors duration-200"
+                    className="text-pb-gray-600 dark:text-pb-gray-400 hover:text-pb-gold transition-colors duration-200"
                   >
                     {link.label}
                   </Link>
@@ -96,12 +96,12 @@ export default function Footer() {
         </div>
 
         {/* Bottom Section */}
-        <div className="border-t border-pb-gray-200 mt-12 pt-8">
+        <div className="border-t border-pb-gray-200 dark:border-pb-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-pb-gray-500 text-sm">
+            <p className="text-pb-gray-500 dark:text-pb-gray-400 text-sm">
               © {currentYear} Pulsebeat Global. All rights reserved.
             </p>
-            <div className="flex items-center gap-6 text-sm text-pb-gray-500">
+            <div className="flex items-center gap-6 text-sm text-pb-gray-500 dark:text-pb-gray-400">
               <Link href="/privacy" className="hover:text-pb-gold transition-colors duration-200">
                 Privacy Policy
               </Link>

@@ -90,15 +90,15 @@ export default function VideoCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <article className="rounded-xl overflow-hidden bg-pb-gray-50/50 border border-pb-gray-200 backdrop-blur-sm transition-all duration-300 hover:border-pb-gold/60 hover:shadow-xl-light hover:scale-[1.02] hover:bg-pb-gray-100/70">
+      <article className="rounded-xl overflow-hidden bg-pb-gray-50/50 dark:bg-pb-gray-800/50 border border-pb-gray-200 dark:border-pb-gray-700 backdrop-blur-sm transition-all duration-300 hover:border-pb-gold/60 hover:shadow-xl-light hover:scale-[1.02] hover:bg-pb-gray-100/70 dark:hover:bg-pb-gray-700/70">
         {/* Thumbnail Container */}
         <div className="relative overflow-hidden">
           {/* Thumbnail Image */}
           <div className={`relative ${aspectClasses[size]} bg-pb-gray-200 overflow-hidden`}>
             {/* Loading Skeleton */}
             {!isImageLoaded && !imageError && (
-              <div className="absolute inset-0 bg-gradient-to-br from-pb-gray-200 to-pb-gray-300 animate-pulse">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pb-white/20 to-transparent animate-shimmer"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-pb-gray-200 dark:from-pb-gray-700 to-pb-gray-300 dark:to-pb-gray-600 animate-pulse">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pb-white/20 dark:via-pb-gray-400/20 to-transparent animate-shimmer"></div>
               </div>
             )}
             
@@ -106,10 +106,10 @@ export default function VideoCard({
             {imageError && (
               <div className="absolute inset-0 bg-gradient-to-br from-pb-gold/20 to-pb-purple/20 flex items-center justify-center">
                 <div className="text-center">
-                  <svg className="w-12 h-12 text-pb-gray-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-12 h-12 text-pb-gray-400 dark:text-pb-gray-500 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                   </svg>
-                  <p className="text-xs text-pb-gray-500">Video Preview</p>
+                  <p className="text-xs text-pb-gray-500 dark:text-pb-gray-400">Video Preview</p>
                 </div>
               </div>
             )}
@@ -191,13 +191,13 @@ export default function VideoCard({
         
         {/* Content */}
         <div className="p-4">
-          <h3 className="text-sm lg:text-base font-semibold text-pb-gray-900 line-clamp-2 leading-tight group-hover:text-pb-gold transition-colors duration-200">
+          <h3 className="text-sm lg:text-base font-semibold text-pb-gray-900 dark:text-pb-white line-clamp-2 leading-tight group-hover:text-pb-gold transition-colors duration-200">
             {title}
           </h3>
           
           {size === "featured" && (
             <div className="mt-3 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-xs text-pb-gray-500">
+              <div className="flex items-center gap-2 text-xs text-pb-gray-500 dark:text-pb-gray-400">
                 <div className="flex items-center gap-1">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />

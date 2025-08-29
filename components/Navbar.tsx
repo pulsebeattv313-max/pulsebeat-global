@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,7 +32,7 @@ export default function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
-        ? "bg-pb-white/95 backdrop-blur-md border-b border-pb-gray-200 shadow-lg" 
+        ? "bg-pb-white/95 dark:bg-pb-gray-900/95 backdrop-blur-md border-b border-pb-gray-200 dark:border-pb-gray-700 shadow-lg" 
         : "bg-transparent"
     }`}>
       <div className="max-w-7xl mx-auto px-4 lg:px-8">
@@ -47,7 +48,7 @@ export default function Navbar() {
               />
             </div>
             <span className={`font-bold text-lg lg:text-xl transition-colors duration-300 ${
-              isScrolled ? "text-pb-gray-900" : "text-pb-white"
+              isScrolled ? "text-pb-gray-900 dark:text-pb-white" : "text-pb-white"
             }`}>
               Pulsebeat Global
             </span>
@@ -60,7 +61,7 @@ export default function Navbar() {
                 key={item.href}
                 href={item.href}
                 className={`font-medium transition-colors duration-200 hover:text-pb-gold ${
-                  isScrolled ? "text-pb-gray-700 hover:text-pb-gold" : "text-pb-white/90 hover:text-pb-white"
+                  isScrolled ? "text-pb-gray-700 dark:text-pb-gray-300 hover:text-pb-gold" : "text-pb-white/90 hover:text-pb-white"
                 }`}
               >
                 {item.label}
@@ -68,8 +69,9 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Button and Theme Toggle */}
           <div className="hidden lg:flex items-center space-x-4">
+            <ThemeToggle />
             <Link
               href="/donate"
               className="px-6 py-2 rounded-lg bg-gradient-to-r from-pb-gold to-pb-gold-light text-pb-gray-900 font-semibold hover:shadow-glow transition-all duration-300 hover:scale-105"
@@ -83,7 +85,7 @@ export default function Navbar() {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className={`lg:hidden p-2 rounded-lg transition-colors duration-200 ${
               isScrolled 
-                ? "text-pb-gray-700 hover:bg-pb-gray-100" 
+                ? "text-pb-gray-700 dark:text-pb-gray-300 hover:bg-pb-gray-100 dark:hover:bg-pb-gray-800" 
                 : "text-pb-white hover:bg-pb-white/10"
             }`}
             aria-label="Toggle mobile menu"
@@ -116,18 +118,21 @@ export default function Navbar() {
         {/* Mobile Menu */}
         {mounted && isMobileMenuOpen && (
           <div className="lg:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 bg-pb-white/95 backdrop-blur-md rounded-lg mt-2 border border-pb-gray-200 shadow-lg">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-pb-white/95 dark:bg-pb-gray-900/95 backdrop-blur-md rounded-lg mt-2 border border-pb-gray-200 dark:border-pb-gray-700 shadow-lg">
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 rounded-md text-pb-gray-700 font-medium hover:text-pb-gold hover:bg-pb-gray-50 transition-colors duration-200"
+                  className="block px-3 py-2 rounded-md text-pb-gray-700 dark:text-pb-gray-300 font-medium hover:text-pb-gold hover:bg-pb-gray-50 dark:hover:bg-pb-gray-800 transition-colors duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
                 </Link>
               ))}
-              <div className="pt-2 border-t border-pb-gray-200">
+              <div className="pt-2 border-t border-pb-gray-200 dark:border-pb-gray-700">
+                <div className="px-3 py-2">
+                  <ThemeToggle />
+                </div>
                 <Link
                   href="/donate"
                   className="block px-3 py-2 rounded-md bg-gradient-to-r from-pb-gold to-pb-gold-light text-pb-gray-900 font-semibold hover:shadow-glow transition-all duration-300"
