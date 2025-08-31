@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const SITE_NAME = "Pulsebeat Global";
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pulsebeat.example.com";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.pulsebeatglobal.com";
 
 export const defaultMetadata: Metadata = {
   title: {
@@ -16,7 +16,18 @@ export const defaultMetadata: Metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} — The Pulse of a New Generation`,
     images: [
-      { url: `${SITE_URL}/og-default.jpg`, width: 1200, height: 630, alt: "Pulsebeat Global" },
+      { 
+        url: `${SITE_URL}/og-image.jpg`, 
+        width: 1200, 
+        height: 630, 
+        alt: "Pulsebeat Global - Celebrity Interviews, Original Programming & Culture" 
+      },
+      { 
+        url: `${SITE_URL}/og-image-dark.jpg`, 
+        width: 1200, 
+        height: 630, 
+        alt: "Pulsebeat Global - Celebrity Interviews, Original Programming & Culture" 
+      },
     ],
   },
   twitter: {
