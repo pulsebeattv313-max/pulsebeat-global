@@ -109,13 +109,13 @@ export default function HomePage() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="w-full px-6 py-4 rounded-lg bg-pb-gray-100/50 dark:bg-pb-gray-700/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gray-900 dark:text-pb-white placeholder-pb-gray-500 dark:placeholder-pb-gray-400 focus:border-pb-gold focus:ring-2 focus:ring-pb-gold/20 focus:outline-none transition-all duration-200"
+                className="w-full px-6 py-4 rounded-lg bg-pb-gray-100/50 dark:bg-pb-gray-700/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gray-900 dark:text-pb-white placeholder-pb-gray-600 dark:placeholder-pb-gray-300 focus:border-pb-gold focus:ring-2 focus:ring-pb-gold/20 focus:outline-none transition-all duration-200"
               />
               <button className="w-full sm:w-auto px-8 py-4 rounded-lg bg-gradient-to-r from-pb-gold to-pb-gold-light text-pb-gray-900 font-bold hover:shadow-glow transition-all duration-300 hover:scale-105">
                 Subscribe
               </button>
             </div>
-            <p className="text-xs text-pb-gray-500 dark:text-pb-gray-400 mt-4">
+            <p className="text-xs text-pb-gray-600 dark:text-pb-gray-300 mt-4">
               No spam. Unsubscribe anytime. Your privacy is protected.
             </p>
           </div>

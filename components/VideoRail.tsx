@@ -99,7 +99,7 @@ export default function VideoRail({
               {title}
             </h2>
             {subtitle && (
-              <p className="text-pb-gray-600 dark:text-pb-gray-400 text-lg max-w-2xl">{subtitle}</p>
+              <p className="text-pb-gray-700 dark:text-pb-gray-300 text-lg max-w-2xl">{subtitle}</p>
             )}
           </div>
           {ctaHref && ctaLabel && (
@@ -146,7 +146,7 @@ export default function VideoRail({
             {title}
           </h2>
           {subtitle && (
-            <p className="text-pb-gray-500 dark:text-pb-gray-400 text-sm">{subtitle}</p>
+            <p className="text-pb-gray-600 dark:text-pb-gray-300 text-sm">{subtitle}</p>
           )}
         </div>
         
@@ -222,7 +222,7 @@ export default function VideoRail({
         <div className="mt-6 sm:hidden">
           <a 
             href={ctaHref}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pb-gray-100/50 border border-pb-gray-300 text-pb-gold font-semibold hover:bg-pb-gold hover:text-pb-gray-900 transition-all duration-300 backdrop-blur-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-pb-gray-100/50 dark:bg-pb-gray-800/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gold font-semibold hover:bg-pb-gold hover:text-pb-gray-900 transition-all duration-300 backdrop-blur-sm"
           >
             {ctaLabel}
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">

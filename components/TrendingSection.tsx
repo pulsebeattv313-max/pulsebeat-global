@@ -34,7 +34,7 @@ export default function TrendingSection({ items }: Props) {
           <h2 className="text-2xl lg:text-3xl font-bold font-heading text-pb-gray-900 dark:text-pb-white mb-1">
             Detroit Trending
           </h2>
-          <p className="text-pb-gray-500 dark:text-pb-gray-400 text-sm">Latest and greatest from the Motor City</p>
+          <p className="text-pb-gray-600 dark:text-pb-gray-300 text-sm">Latest and greatest from the Motor City</p>
         </div>
         
         <div className="flex items-center gap-4">

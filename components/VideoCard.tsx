@@ -175,14 +175,14 @@ export default function VideoCard({
                 </span>
               )}
               {category && (
-                <span className="px-2 py-1 text-xs font-medium bg-pb-white/90 text-pb-gold rounded-full backdrop-blur-sm border border-pb-gray-200">
+                <span className="px-2 py-1 text-xs font-medium bg-pb-white/95 dark:bg-pb-gray-800/95 text-pb-gold dark:text-pb-gold-light rounded-full backdrop-blur-sm border border-pb-gray-200 dark:border-pb-gray-600 font-semibold">
                   {category.toUpperCase()}
                 </span>
               )}
             </div>
             
             {showDuration && (
-              <span className="px-2 py-1 text-xs font-medium bg-pb-gray-900/80 text-pb-white rounded backdrop-blur-sm">
+              <span className="px-2 py-1 text-xs font-medium bg-pb-gray-900/90 text-pb-white rounded backdrop-blur-sm font-semibold">
                 {duration}
               </span>
             )}
@@ -197,7 +197,7 @@ export default function VideoCard({
           
           {size === "featured" && (
             <div className="mt-3 flex items-center justify-between">
-              <div className="flex items-center gap-2 text-xs text-pb-gray-500 dark:text-pb-gray-400">
+              <div className="flex items-center gap-2 text-xs text-pb-gray-600 dark:text-pb-gray-300">
                 <div className="flex items-center gap-1">
                   <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
