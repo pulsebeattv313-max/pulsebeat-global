@@ -22,7 +22,7 @@ export default function WatchPage({ params }: { params: { id: string } }) {
         <div className="space-y-4">
           <h1 className="text-2xl lg:text-3xl font-bold text-pb-gray-900 dark:text-pb-white">{video.title}</h1>
           
-          <div className="flex items-center gap-4 text-sm text-pb-gray-600 dark:text-pb-gray-400">
+                      <div className="flex items-center gap-4 text-sm text-pb-gray-700 dark:text-pb-gray-300">
             <div className="flex items-center gap-2">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />

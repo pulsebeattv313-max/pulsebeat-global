@@ -52,7 +52,7 @@ export default function TrendingSection({ items }: Props) {
           <div className="hidden lg:flex items-center gap-2">
             <button
               onClick={() => scroll("left")}
-              className="p-2 rounded-full bg-pb-gray-100/50 dark:bg-pb-gray-800/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gray-600 dark:text-pb-gray-400 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
+              className="p-2 rounded-full bg-pb-gray-100/50 dark:bg-pb-gray-800/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gray-700 dark:text-pb-gray-300 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
               aria-label="Scroll left"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -61,7 +61,7 @@ export default function TrendingSection({ items }: Props) {
             </button>
             <button
               onClick={() => scroll("right")}
-              className="p-2 rounded-full bg-pb-gray-100/50 dark:bg-pb-gray-800/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gray-600 dark:text-pb-gray-400 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
+              className="p-2 rounded-full bg-pb-gray-100/50 dark:bg-pb-gray-800/50 border border-pb-gray-300 dark:border-pb-gray-600 text-pb-gray-700 dark:text-pb-gray-300 hover:text-pb-gold hover:border-pb-gold/50 transition-all duration-200 backdrop-blur-sm"
               aria-label="Scroll right"
             >
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

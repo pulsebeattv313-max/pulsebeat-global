@@ -8,12 +8,12 @@ export default function DonatePage() {
         Your gift powers original arts, entertainment, and culture programming.
       </p>
       <div className="mt-8 space-y-4">
-        <p className="text-pb-gray-600 dark:text-pb-gray-400">
+        <p className="text-pb-gray-700 dark:text-pb-gray-300">
           Help us continue creating high-quality content that informs, entertains, and inspires. 
           Your support makes it possible for us to bring exclusive celebrity interviews, original 
           programming, and cultural coverage to audiences worldwide.
         </p>
-        <p className="text-pb-gray-600 dark:text-pb-gray-400">
+        <p className="text-pb-gray-700 dark:text-pb-gray-300">
           Every donation, no matter the size, helps us maintain our independence and continue 
           producing the content you love.
         </p>
@@ -25,7 +25,7 @@ export default function DonatePage() {
       >
         Donate Now
       </a>
-      <p className="text-sm text-pb-gray-500 dark:text-pb-gray-400 mt-6">
+      <p className="text-sm text-pb-gray-600 dark:text-pb-gray-300 mt-6">
         Pulsebeat Global is committed to transparency and responsible use of donations.
       </p>
     </section>

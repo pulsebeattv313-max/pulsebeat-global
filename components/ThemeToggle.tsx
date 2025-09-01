@@ -25,7 +25,7 @@ export default function ThemeToggle() {
     { value: 'system', label: 'System', icon: '💻' },
   ] as const;
 
-  const currentTheme = themes.find(t => t.value === theme) || themes[2];
+  const currentTheme = themes.find(t => t.value === theme) || themes[1];
 
   return (
     <div className="relative" ref={dropdownRef}>

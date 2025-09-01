@@ -12,22 +12,22 @@ export default function ContactPage() {
       <div className="grid md:grid-cols-2 gap-8 mt-12">
         <div>
           <h2 className="text-xl font-semibold mb-4 text-pb-gray-900 dark:text-pb-white">General Inquiries</h2>
-          <p className="text-pb-gray-600 dark:text-pb-gray-400 mb-2">For general questions and support</p>
+                            <p className="text-pb-gray-700 dark:text-pb-gray-300 mb-2">For general questions and support</p>
           <p className="text-pb-gold">hello@pulsebeatglobal.com</p>
         </div>
         <div>
           <h2 className="text-xl font-semibold mb-4 text-pb-gray-900 dark:text-pb-white">Partnership Opportunities</h2>
-          <p className="text-pb-gray-600 dark:text-pb-gray-400 mb-2">For brand partnerships and collaborations</p>
+                            <p className="text-pb-gray-700 dark:text-pb-gray-300 mb-2">For brand partnerships and collaborations</p>
           <p className="text-pb-gold">partnerships@pulsebeatglobal.com</p>
         </div>
         <div>
           <h2 className="text-xl font-semibold mb-4 text-pb-gray-900 dark:text-pb-white">Press Inquiries</h2>
-          <p className="text-pb-gray-600 dark:text-pb-gray-400 mb-2">For media and press related questions</p>
+                            <p className="text-pb-gray-700 dark:text-pb-gray-300 mb-2">For media and press related questions</p>
           <p className="text-pb-gold">press@pulsebeatglobal.com</p>
         </div>
         <div>
           <h2 className="text-xl font-semibold mb-4 text-pb-gray-900 dark:text-pb-white">Careers</h2>
-          <p className="text-pb-gray-600 dark:text-pb-gray-400 mb-2">Join our growing team</p>
+                            <p className="text-pb-gray-700 dark:text-pb-gray-300 mb-2">Join our growing team</p>
           <p className="text-pb-gold">careers@pulsebeatglobal.com</p>
         </div>
       </div>
