@@ -18,15 +18,22 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    { href: "/", label: "Home" },
+  // Organized navigation items by category
+  const contentItems = [
     { href: "/celebrities", label: "Celebrities" },
     { href: "/original-programming", label: "Original Programming" },
     { href: "/news-culture", label: "News & Culture" },
+  ];
+
+  const companyItems = [
     { href: "/about", label: "About" },
     { href: "/team", label: "Team" },
     { href: "/partners", label: "Partners" },
+  ];
+
+  const supportItems = [
     { href: "/contact", label: "Contact" },
+    { href: "/donate", label: "Donate" },
   ];
 
   return (
@@ -56,28 +63,56 @@ export default function Navbar() {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navItems.map((item) => (
+            {/* Content Section */}
+            <div className="flex items-center space-x-6">
+              {contentItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`font-medium transition-colors duration-200 hover:text-pb-gold ${
+                    isScrolled ? "text-pb-gray-700 dark:text-pb-gray-300 hover:text-pb-gold" : "text-pb-white/90 hover:text-pb-white"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+
+            {/* Company Section */}
+            <div className="flex items-center space-x-6">
+              {companyItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`font-medium transition-colors duration-200 hover:text-pb-gold ${
+                    isScrolled ? "text-pb-gray-700 dark:text-pb-gray-300 hover:text-pb-gold" : "text-pb-white/90 hover:text-pb-white"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Right Side Actions */}
+          <div className="hidden lg:flex items-center space-x-4">
+            <ThemeToggle />
+            <div className="flex items-center space-x-3">
               <Link
-                key={item.href}
-                href={item.href}
+                href="/contact"
                 className={`font-medium transition-colors duration-200 hover:text-pb-gold ${
                   isScrolled ? "text-pb-gray-700 dark:text-pb-gray-300 hover:text-pb-gold" : "text-pb-white/90 hover:text-pb-white"
                 }`}
               >
-                {item.label}
+                Contact
               </Link>
-            ))}
-          </div>
-
-          {/* CTA Button and Theme Toggle */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <ThemeToggle />
-            <Link
-              href="/donate"
-              className="px-6 py-2 rounded-lg bg-gradient-to-r from-pb-gold to-pb-gold-light text-pb-gray-900 font-semibold hover:shadow-glow transition-all duration-300 hover:scale-105"
-            >
-              Donate
-            </Link>
+              <Link
+                href="/donate"
+                className="px-6 py-2 rounded-lg bg-gradient-to-r from-pb-gold to-pb-gold-light text-pb-gray-900 font-semibold hover:shadow-glow transition-all duration-300 hover:scale-105"
+              >
+                Donate
+              </Link>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -119,16 +154,55 @@ export default function Navbar() {
         {mounted && isMobileMenuOpen && (
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-pb-white/95 dark:bg-pb-gray-900/95 backdrop-blur-md rounded-lg mt-2 border border-pb-gray-200 dark:border-pb-gray-700 shadow-lg">
-              {navItems.map((item) => (
+              {/* Content Section */}
+              <div className="px-3 py-2">
+                <h3 className="text-xs font-semibold text-pb-gray-500 dark:text-pb-gray-400 uppercase tracking-wider mb-2">
+                  Content
+                </h3>
+                {contentItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block px-3 py-2 rounded-md text-pb-gray-700 dark:text-pb-gray-300 font-medium hover:text-pb-gold hover:bg-pb-gray-50 dark:hover:bg-pb-gray-800 transition-colors duration-200"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Company Section */}
+              <div className="px-3 py-2 border-t border-pb-gray-200 dark:border-pb-gray-700">
+                <h3 className="text-xs font-semibold text-pb-gray-500 dark:text-pb-gray-400 uppercase tracking-wider mb-2">
+                  Company
+                </h3>
+                {companyItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="block px-3 py-2 rounded-md text-pb-gray-700 dark:text-pb-gray-300 font-medium hover:text-pb-gold hover:bg-pb-gray-50 dark:hover:bg-pb-gray-800 transition-colors duration-200"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+
+              {/* Support Section */}
+              <div className="px-3 py-2 border-t border-pb-gray-200 dark:border-pb-gray-700">
+                <h3 className="text-xs font-semibold text-pb-gray-500 dark:text-pb-gray-400 uppercase tracking-wider mb-2">
+                  Support
+                </h3>
                 <Link
-                  key={item.href}
-                  href={item.href}
+                  href="/contact"
                   className="block px-3 py-2 rounded-md text-pb-gray-700 dark:text-pb-gray-300 font-medium hover:text-pb-gold hover:bg-pb-gray-50 dark:hover:bg-pb-gray-800 transition-colors duration-200"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {item.label}
+                  Contact
                 </Link>
-              ))}
+              </div>
+
+              {/* Theme Toggle and Donate */}
               <div className="pt-2 border-t border-pb-gray-200 dark:border-pb-gray-700">
                 <div className="px-3 py-2">
                   <ThemeToggle />
