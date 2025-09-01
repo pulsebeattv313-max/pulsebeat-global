@@ -147,7 +147,7 @@ body {
   }
   
   .dark .text-pb-gray-50 {
-    color: #fafafa;
+    color: #ffffff;
   }
   
   .text-pb-gray-100 {
@@ -155,7 +155,7 @@ body {
   }
   
   .dark .text-pb-gray-100 {
-    color: #f5f5f5;
+    color: #fafafa;
   }
   
   .text-pb-gray-200 {
@@ -163,7 +163,7 @@ body {
   }
   
   .dark .text-pb-gray-200 {
-    color: #e5e5e5;
+    color: #f5f5f5;
   }
   
   .text-pb-gray-300 {
@@ -171,7 +171,7 @@ body {
   }
   
   .dark .text-pb-gray-300 {
-    color: #d4d4d4;
+    color: #e5e5e5;
   }
   
   .text-pb-gray-400 {
@@ -179,7 +179,7 @@ body {
   }
   
   .dark .text-pb-gray-400 {
-    color: #a3a3a3;
+    color: #d4d4d4;
   }
   
   .text-pb-gray-500 {
@@ -187,7 +187,7 @@ body {
   }
   
   .dark .text-pb-gray-500 {
-    color: #737373;
+    color: #a3a3a3;
   }
   
   .text-pb-gray-600 {
@@ -195,7 +195,7 @@ body {
   }
   
   .dark .text-pb-gray-600 {
-    color: #525252;
+    color: #d4d4d4;
   }
   
   .text-pb-gray-700 {
@@ -203,7 +203,7 @@ body {
   }
   
   .dark .text-pb-gray-700 {
-    color: #404040;
+    color: #e5e5e5;
   }
   
   .text-pb-gray-800 {
@@ -211,7 +211,7 @@ body {
   }
   
   .dark .text-pb-gray-800 {
-    color: #262626;
+    color: #f5f5f5;
   }
   
   .text-pb-gray-900 {
@@ -219,7 +219,7 @@ body {
   }
   
   .dark .text-pb-gray-900 {
-    color: #1a1a1a;
+    color: #ffffff;
   }
   
   .text-pb-black {
