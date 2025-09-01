@@ -54,7 +54,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div className="min-h-screen bg-pb-white dark:bg-pb-gray-900">
+    <div className="min-h-screen bg-pb-white dark:bg-black">
       {/* Hero Section */}
       <Hero youTubeId={heroId} />
       
@@ -96,7 +96,7 @@ export default function HomePage() {
       {/* Newsletter Signup Section */}
       <section className="mx-auto max-w-7xl px-4 lg:px-8 mt-24 mb-16">
         <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-pb-purple/10 via-pb-gold/5 to-pb-accent/10 border border-pb-gold/20 backdrop-blur-sm">
-          <div className="absolute inset-0 bg-gradient-to-br from-pb-white/80 via-pb-white/60 to-pb-white/80 dark:from-pb-gray-800/80 dark:via-pb-gray-800/60 dark:to-pb-gray-800/80"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-pb-white/80 via-pb-white/60 to-pb-white/80 dark:from-black/80 dark:via-black/60 dark:to-black/80"></div>
           <div className="relative z-10 px-8 py-16 text-center">
             <h2 className="text-3xl lg:text-4xl font-bold font-heading text-pb-gray-900 dark:text-pb-white mb-4">
               Never Miss a <span className="text-transparent bg-clip-text bg-gradient-to-r from-pb-gold to-pb-accent">Pulsebeat</span>

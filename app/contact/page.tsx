@@ -1,6 +1,6 @@
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-pb-white dark:bg-pb-gray-900 pt-20 page-transition">
+    <div className="min-h-screen bg-pb-white dark:bg-black pt-20 page-transition">
       <section className="mx-auto max-w-3xl px-4 py-16">
         <h1 className="text-4xl font-bold mb-6 text-center text-pb-gray-900 dark:text-pb-white">Contact Us</h1>
         <div className="text-center mb-8">

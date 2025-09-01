@@ -1,6 +1,6 @@
 export default function TeamPage() {
   return (
-    <div className="min-h-screen bg-pb-white dark:bg-pb-gray-900 pt-20 page-transition">
+    <div className="min-h-screen bg-pb-white dark:bg-black pt-20 page-transition">
       <section className="mx-auto max-w-4xl px-4 py-16">
         <h1 className="text-4xl font-bold mb-6 text-pb-gray-900 dark:text-pb-white">Our Team</h1>
         <div className="prose prose-invert dark:prose-invert max-w-none space-y-4 text-pb-gray-700 dark:text-pb-gray-300">

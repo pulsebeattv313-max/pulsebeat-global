@@ -90,15 +90,15 @@ export default function VideoCard({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <article className="rounded-xl overflow-hidden bg-pb-gray-50/50 dark:bg-pb-gray-800/50 border border-pb-gray-200 dark:border-pb-gray-700 backdrop-blur-sm transition-all duration-300 hover:border-pb-gold/60 hover:shadow-xl-light hover:scale-[1.02] hover:bg-pb-gray-100/70 dark:hover:bg-pb-gray-700/70">
+      <article className="rounded-xl overflow-hidden bg-pb-gray-50/50 dark:bg-gray-900/50 border border-pb-gray-200 dark:border-pb-gray-700 backdrop-blur-sm transition-all duration-300 hover:border-pb-gold/60 hover:shadow-xl-light hover:scale-[1.02] hover:bg-pb-gray-100/70 dark:hover:bg-gray-800/70">
         {/* Thumbnail Container */}
         <div className="relative overflow-hidden">
           {/* Thumbnail Image */}
           <div className={`relative ${aspectClasses[size]} bg-pb-gray-200 overflow-hidden`}>
             {/* Loading Skeleton */}
             {!isImageLoaded && !imageError && (
-              <div className="absolute inset-0 bg-gradient-to-br from-pb-gray-200 dark:from-pb-gray-700 to-pb-gray-300 dark:to-pb-gray-600 animate-pulse">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pb-white/20 dark:via-pb-gray-400/20 to-transparent animate-shimmer"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-pb-gray-200 dark:from-gray-800 to-pb-gray-300 dark:to-gray-700 animate-pulse">
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-pb-white/20 dark:via-gray-600/20 to-transparent animate-shimmer"></div>
               </div>
             )}
             

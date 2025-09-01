@@ -7,7 +7,7 @@ export default function WatchPage({ params }: { params: { id: string } }) {
   const src = `https://www.youtube-nocookie.com/embed/${video.youTubeId}?autoplay=0&mute=0&controls=1&playsinline=1&modestbranding=1&rel=0`;
   
   return (
-    <div className="min-h-screen bg-pb-white dark:bg-pb-gray-900 pt-20 page-transition">
+    <div className="min-h-screen bg-pb-white dark:bg-black pt-20 page-transition">
       <div className="mx-auto max-w-5xl px-4 lg:px-8 py-8">
         <div className="aspect-video w-full rounded-xl overflow-hidden border border-pb-gray-300 dark:border-pb-gray-700 shadow-xl mb-6">
           <iframe

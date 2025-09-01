@@ -1,7 +1,7 @@
 export default function DonatePage() {
   const href = process.env.NEXT_PUBLIC_PAYPAL_DONATE_URL || "#";
   return (
-    <div className="min-h-screen bg-pb-white dark:bg-pb-gray-900 pt-20 page-transition">
+    <div className="min-h-screen bg-pb-white dark:bg-black pt-20 page-transition">
       <section className="mx-auto max-w-3xl px-4 py-16 text-center">
         <h1 className="text-4xl font-bold text-pb-gray-900 dark:text-pb-white">Support Pulsebeat Global</h1>
         <p className="text-pb-gray-700 dark:text-pb-gray-300 mt-3 text-lg">

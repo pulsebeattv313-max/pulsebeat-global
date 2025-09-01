@@ -213,8 +213,8 @@ export default function VideoRail({
         </div>
         
         {/* Fade edges for rail */}
-        <div className="absolute top-0 left-0 bottom-4 w-8 bg-gradient-to-r from-pb-white dark:from-pb-gray-900 to-transparent pointer-events-none" />
-        <div className="absolute top-0 right-0 bottom-4 w-8 bg-gradient-to-l from-pb-white dark:from-pb-gray-900 to-transparent pointer-events-none" />
+        <div className="absolute top-0 left-0 bottom-4 w-8 bg-gradient-to-r from-pb-white dark:from-black to-transparent pointer-events-none" />
+        <div className="absolute top-0 right-0 bottom-4 w-8 bg-gradient-to-l from-pb-white dark:from-black to-transparent pointer-events-none" />
       </div>
       
       {/* Mobile CTA */}

@@ -107,7 +107,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} bg-pb-white dark:bg-pb-gray-900 text-pb-gray-900 dark:text-pb-gray-100 transition-colors duration-300`}>
+      <body className={`${inter.className} bg-pb-white dark:bg-black text-pb-gray-900 dark:text-pb-gray-100 transition-colors duration-300`}>
         <ThemeProvider>
           <Navbar />
           <main className="min-h-screen">
