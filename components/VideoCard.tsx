@@ -36,13 +36,8 @@ export default function VideoCard({
     setMounted(true);
   }, []);
   
-  // Generate multiple thumbnail qualities for better loading
-  const thumbnails = {
-    hq: `https://i.ytimg.com/vi/${youTubeId}/hqdefault.jpg`,
-    mq: `https://i.ytimg.com/vi/${youTubeId}/mqdefault.jpg`,
-    sd: `https://i.ytimg.com/vi/${youTubeId}/sddefault.jpg`,
-    maxres: `https://i.ytimg.com/vi/${youTubeId}/maxresdefault.jpg`
-  };
+  // Optimized thumbnail selection
+  const thumbnail = `https://i.ytimg.com/vi/${youTubeId}/maxresdefault.jpg`;
   
   const link = `/watch/${id || youTubeId}`;
   
@@ -114,38 +109,19 @@ export default function VideoCard({
               </div>
             )}
             
-            {/* Progressive Image Loading */}
+            {/* Optimized Image Loading */}
             {!imageError && (
-              <>
-                {/* Low quality placeholder */}
-                <img 
-                  src={thumbnails.mq}
-                  alt=""
-                  className="absolute inset-0 w-full h-full object-cover blur-sm scale-110 opacity-50"
-                  onLoad={() => {
-                    if (!isImageLoaded) {
-                      // Load high quality image
-                      const img = new Image();
-                      img.onload = handleImageLoad;
-                      img.onerror = handleImageError;
-                      img.src = thumbnails.hq;
-                    }
-                  }}
-                  onError={handleImageError}
-                />
-                
-                {/* High quality image */}
-                <img 
-                  src={thumbnails.hq}
-                  alt={title} 
-                  className={`w-full h-full object-cover transition-all duration-500 ${
-                    isHovered ? 'scale-110' : 'scale-100'
-                  } ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
-                  onLoad={handleImageLoad}
-                  onError={handleImageError}
-                  loading="lazy"
-                />
-              </>
+              <img 
+                src={thumbnail}
+                alt={title} 
+                className={`w-full h-full object-cover transition-all duration-300 ${
+                  isHovered ? 'scale-105' : 'scale-100'
+                } ${isImageLoaded ? 'opacity-100' : 'opacity-0'}`}
+                onLoad={handleImageLoad}
+                onError={handleImageError}
+                loading="lazy"
+                decoding="async"
+              />
             )}
             
             {/* Gradient Overlay */}

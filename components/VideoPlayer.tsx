@@ -10,16 +10,16 @@ export default function VideoPlayer({ youTubeId, title }: VideoPlayerProps) {
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
-  const src = `https://www.youtube-nocookie.com/embed/${youTubeId}?autoplay=0&mute=0&controls=1&playsinline=1&modestbranding=1&rel=0`;
+  const src = `https://www.youtube-nocookie.com/embed/${youTubeId}?autoplay=0&mute=0&controls=1&playsinline=1&modestbranding=1&rel=0&enablejsapi=1&origin=${typeof window !== 'undefined' ? window.location.origin : ''}`;
 
   useEffect(() => {
-    // Set a timeout to detect if video fails to load
+    // Reduce timeout for faster error detection
     const timer = setTimeout(() => {
       if (isLoading) {
         setHasError(true);
         setIsLoading(false);
       }
-    }, 10000); // 10 second timeout
+    }, 5000); // 5 second timeout for faster loading
 
     return () => clearTimeout(timer);
   }, [isLoading]);
@@ -77,6 +77,9 @@ export default function VideoPlayer({ youTubeId, title }: VideoPlayerProps) {
         referrerPolicy="strict-origin-when-cross-origin"
         onLoad={handleLoad}
         onError={handleError}
+        loading="lazy"
+        frameBorder="0"
+        allowFullScreen
       />
     </div>
   );
