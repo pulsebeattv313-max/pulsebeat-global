@@ -109,16 +109,21 @@ export default function Hero({ youTubeId }: { youTubeId: string }) {
             textShadow: '0 8px 32px rgba(0, 0, 0, 0.8), 0 4px 16px rgba(0, 0, 0, 0.6), 0 2px 8px rgba(0, 0, 0, 0.4)'
           } : {}}>
             <span className={isMobile ? 'drop-shadow-lg' : ''}>Welcome to</span>{" "}
-            <span className={`text-transparent bg-clip-text ${
+            <span className={`relative inline-block text-transparent ${
               isMobile 
-                ? 'bg-gradient-to-r from-pb-gold via-pb-gold-light to-pb-accent drop-shadow-2xl' 
-                : 'bg-gradient-to-r from-pb-gold via-pb-gold-light to-pb-accent'
-            }`} style={isMobile ? {
-              filter: 'drop-shadow(0 4px 8px rgba(212, 175, 55, 0.3)) drop-shadow(0 2px 4px rgba(212, 175, 55, 0.6))',
-              WebkitBackgroundClip: 'text',
-              backgroundClip: 'text'
-            } : {}}>
-              Pulsebeat Global
+                ? 'hero-logo-text-mobile' 
+                : 'hero-logo-text hover:scale-105 transition-transform duration-300'
+            }`}>
+              <span className="relative z-10">
+                Pulsebeat{" "}
+                <span className="relative">
+                  Global
+                  {/* Glow effect behind text */}
+                  <span className="absolute inset-0 blur-sm opacity-70 text-transparent hero-logo-glow">
+                    Global
+                  </span>
+                </span>
+              </span>
             </span>
           </h1>
           <p className={`text-xl lg:text-2xl text-pb-white/90 mb-8 max-w-3xl mx-auto leading-relaxed ${
