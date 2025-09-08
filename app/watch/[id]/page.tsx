@@ -1,22 +1,32 @@
 import { getVideoById } from "@/lib/videos";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import VideoPlayer from "@/components/VideoPlayer";
+
+export async function generateMetadata({ params }: { params: { id: string } }): Promise<Metadata> {
+  const video = getVideoById(params.id);
+  if (!video) return {};
+  
+  return {
+    title: `${video.title} — Pulsebeat Global`,
+    description: video.description || `Watch ${video.title} on Pulsebeat Global`,
+    openGraph: {
+      title: `${video.title} — Pulsebeat Global`,
+      description: video.description || `Watch ${video.title} on Pulsebeat Global`,
+      type: "video.other",
+    },
+  };
+}
 
 export default function WatchPage({ params }: { params: { id: string } }) {
   const video = getVideoById(params.id);
   if (!video) return notFound();
-  const src = `https://www.youtube-nocookie.com/embed/${video.youTubeId}?autoplay=0&mute=0&controls=1&playsinline=1&modestbranding=1&rel=0`;
   
   return (
     <div className="min-h-screen bg-pb-white dark:bg-black pt-20 page-transition">
       <div className="mx-auto max-w-5xl px-4 lg:px-8 py-8">
         <div className="aspect-video w-full rounded-xl overflow-hidden border border-pb-gray-300 dark:border-pb-gray-700 shadow-xl mb-6">
-          <iframe
-            className="w-full h-full"
-            src={src}
-            title={video.title}
-            allow="autoplay; fullscreen; picture-in-picture"
-            referrerPolicy="strict-origin-when-cross-origin"
-          />
+          <VideoPlayer youTubeId={video.youTubeId} title={video.title} />
         </div>
         
         <div className="space-y-4">
