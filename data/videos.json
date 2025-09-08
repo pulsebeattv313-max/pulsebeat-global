@@ -1,10 +1,17 @@
 {
   "hero": {
-    "youTubeId": "7EAVHobG0hw",
-    "title": "Ayo and Teo Dancers on Pulsebeat tv",
-    "description": "A quick cut of celebrity moments and original programming from The Pulsebeat TV."
+    "youTubeId": "GbpbDYkCMkA",
+    "title": "PULSEBEAT WITH GREG DUNMORE: Dr. Ossian Sweet - A Defining Moment in America's Fight Against Racism",
+    "description": "This episode of PULSEBEAT WITH GREG DUNMORE explores the powerful story of Dr. Ossian Sweet, a Detroiter whose fight to defend his home became a defining moment in America's struggle against racism. Airing Sunday, September 7, 2025 — 6:30–7:00 AM (EST) on Detroit's ABC affiliate TV20 WMYD with encore on TV 33 WHPR Detroit Live. Emmy-Nominated | NABJ 'Salute to Excellence' Award-Winning show."
   },
   "celebrities": [
+    { 
+      "id": "c2", 
+      "title": "PULSEBEAT WITH GREG DUNMORE: Dr. Ossian Sweet - A Defining Moment in America's Fight Against Racism", 
+      "youTubeId": "GbpbDYkCMkA", 
+      "tags": ["celebrity", "greg-dunmore", "dr-ossian-sweet", "detroit-history", "civil-rights", "black-history", "racism", "detroit", "abc", "wmyd", "tv33-whpr", "nabj", "emmy-nominated", "award-winning", "exclusive", "pulsebeat-tv", "entertainment", "documentary"],
+      "description": "This episode of PULSEBEAT WITH GREG DUNMORE explores the powerful story of Dr. Ossian Sweet, a Detroiter whose fight to defend his home became a defining moment in America's struggle against racism. Airing Sunday, September 7, 2025 — 6:30–7:00 AM (EST) on Detroit's ABC affiliate TV20 WMYD with encore on TV 33 WHPR Detroit Live. Emmy-Nominated | NABJ 'Salute to Excellence' Award-Winning show."
+    },
     { 
       "id": "c3", 
       "title": "Honoring Extraordinary Talents: Montell Jordan, Mavis Staples & Malcolm-Jamal Warner", 
@@ -102,6 +109,13 @@
       "youTubeId": "7EAVHobG0hw", 
       "tags": ["celebrity", "ayo-teo", "dancers", "dance", "entertainment", "exclusive", "pulsebeat-tv", "performance", "music"],
       "description": "Ayo and Teo Dancers featured on Pulsebeat TV showcasing their incredible dance moves and talent."
+    },
+    { 
+      "id": "c17", 
+      "title": "Ayo and Teo Dancers on Pulsebeat tv", 
+      "youTubeId": "7EAVHobG0hw", 
+      "tags": ["celebrity", "ayo-teo", "dancers", "dance", "entertainment", "exclusive", "pulsebeat-tv", "performance", "music"],
+      "description": "A quick cut of celebrity moments and original programming from The Pulsebeat TV."
     }
   ],
   "originals": [
@@ -232,6 +246,13 @@
       "youTubeId": "yn4V_6Decuo", 
       "tags": ["news-culture", "pulsebeat-tv", "culture", "black-panther", "hattie", "jesus", "james", "exclusive", "entertainment"],
       "description": "Without Equals: The Black Panther, Hattie, Jesus & James featured on Pulsebeat TV."
+    },
+    { 
+      "id": "n14", 
+      "title": "PULSEBEAT WITH GREG DUNMORE: Dr. Ossian Sweet - A Defining Moment in America's Fight Against Racism", 
+      "youTubeId": "GbpbDYkCMkA", 
+      "tags": ["news-culture", "pulsebeat-tv", "culture", "greg-dunmore", "dr-ossian-sweet", "detroit-history", "civil-rights", "black-history", "racism", "detroit", "abc", "wmyd", "tv33-whpr", "nabj", "emmy-nominated", "award-winning", "exclusive", "entertainment", "documentary"],
+      "description": "This episode of PULSEBEAT WITH GREG DUNMORE explores the powerful story of Dr. Ossian Sweet, a Detroiter whose fight to defend his home became a defining moment in America's struggle against racism. Airing Sunday, September 7, 2025 — 6:30–7:00 AM (EST) on Detroit's ABC affiliate TV20 WMYD with encore on TV 33 WHPR Detroit Live. Emmy-Nominated | NABJ 'Salute to Excellence' Award-Winning show."
     }
   ]
 }
