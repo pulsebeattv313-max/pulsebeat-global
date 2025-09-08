@@ -6,13 +6,6 @@
   },
   "celebrities": [
     { 
-      "id": "c2", 
-      "title": "PULSEBEAT WITH GREG DUNMORE: Dr. Ossian Sweet - A Defining Moment in America's Fight Against Racism", 
-      "youTubeId": "GbpbDYkCMkA", 
-      "tags": ["celebrity", "greg-dunmore", "dr-ossian-sweet", "detroit-history", "civil-rights", "black-history", "racism", "detroit", "abc", "wmyd", "tv33-whpr", "nabj", "emmy-nominated", "award-winning", "exclusive", "pulsebeat-tv", "entertainment", "documentary"],
-      "description": "This episode of PULSEBEAT WITH GREG DUNMORE explores the powerful story of Dr. Ossian Sweet, a Detroiter whose fight to defend his home became a defining moment in America's struggle against racism. Airing Sunday, September 7, 2025 — 6:30–7:00 AM (EST) on Detroit's ABC affiliate TV20 WMYD with encore on TV 33 WHPR Detroit Live. Emmy-Nominated | NABJ 'Salute to Excellence' Award-Winning show."
-    },
-    { 
       "id": "c3", 
       "title": "Honoring Extraordinary Talents: Montell Jordan, Mavis Staples & Malcolm-Jamal Warner", 
       "youTubeId": "gKTenKGHoG4", 
@@ -119,6 +112,13 @@
     }
   ],
   "originals": [
+    { 
+      "id": "o4", 
+      "title": "PULSEBEAT WITH GREG DUNMORE: Dr. Ossian Sweet - A Defining Moment in America's Fight Against Racism", 
+      "youTubeId": "GbpbDYkCMkA", 
+      "tags": ["original-programming", "pulsebeat-tv", "greg-dunmore", "dr-ossian-sweet", "detroit-history", "civil-rights", "black-history", "racism", "detroit", "abc", "wmyd", "tv33-whpr", "nabj", "emmy-nominated", "award-winning", "exclusive", "entertainment", "documentary"],
+      "description": "This episode of PULSEBEAT WITH GREG DUNMORE explores the powerful story of Dr. Ossian Sweet, a Detroiter whose fight to defend his home became a defining moment in America's struggle against racism. Airing Sunday, September 7, 2025 — 6:30–7:00 AM (EST) on Detroit's ABC affiliate TV20 WMYD with encore on TV 33 WHPR Detroit Live. Emmy-Nominated | NABJ 'Salute to Excellence' Award-Winning show."
+    },
     { 
       "id": "o5", 
       "title": "PULSEBEAT WITH GREG DUNMORE: Investigating Elvis Presley - Award-Winning TV Show", 

@@ -61,6 +61,18 @@ export default function HomePage() {
       {/* Detroit Trending Section */}
       <TrendingSection items={detroitTrendingData} />
       
+      {/* Original Programming Grid - Now Top Section */}
+      <VideoRail 
+        title="Original Programming" 
+        subtitle="Award-winning shows and series you can't find anywhere else"
+        anchor="originals"
+        items={originals} 
+        ctaHref="/original-programming" 
+        ctaLabel="Browse all shows"
+        layout="grid"
+        size="featured"
+      />
+      
       {/* Featured Celebrity Content */}
       <VideoRail 
         title="Celebrity Spotlight" 
@@ -70,17 +82,6 @@ export default function HomePage() {
         ctaHref="/celebrities" 
         ctaLabel="See all celebrities"
         size="lg"
-      />
-      
-      {/* Original Programming Grid */}
-      <VideoRail 
-        title="Original Programming" 
-        subtitle="Award-winning shows and series you can't find anywhere else"
-        items={originals} 
-        ctaHref="/original-programming" 
-        ctaLabel="Browse all shows"
-        layout="grid"
-        size="featured"
       />
       
       {/* News & Culture Rail */}
