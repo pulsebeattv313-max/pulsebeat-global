@@ -4,55 +4,12 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/lib/theme";
+import { defaultMetadata, jsonLdOrganization, jsonLdWebSite, jsonLdTVSeries } from "@/lib/seo";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pulsebeat Global - Celebrity Interviews, Original Programming & Culture",
-  description: "Discover exclusive celebrity interviews, award-winning original programming, and cultural content from Pulsebeat Global. Your premier destination for entertainment, arts, and culture.",
-  keywords: "celebrity interviews, original programming, culture, entertainment, arts, Pulsebeat Global, Greg Dunmore",
-  authors: [{ name: "Pulsebeat Global" }],
-  creator: "Pulsebeat Global",
-  publisher: "Pulsebeat Global",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL('https://www.pulsebeatglobal.com'),
-  alternates: {
-    canonical: '/',
-  },
-  openGraph: {
-    title: "Pulsebeat Global - Celebrity Interviews, Original Programming & Culture",
-    description: "Discover exclusive celebrity interviews, award-winning original programming, and cultural content from Pulsebeat Global.",
-    url: 'https://www.pulsebeatglobal.com',
-    siteName: 'Pulsebeat Global',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Pulsebeat Global - Celebrity Interviews, Original Programming & Culture',
-      },
-      {
-        url: '/og-image-dark.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Pulsebeat Global - Celebrity Interviews, Original Programming & Culture',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: "Pulsebeat Global - Celebrity Interviews, Original Programming & Culture",
-    description: "Discover exclusive celebrity interviews, award-winning original programming, and cultural content from Pulsebeat Global.",
-    images: ['/og-image.jpg', '/og-image-dark.jpg'],
-    creator: '@pulsebeatglobal',
-    site: '@pulsebeatglobal',
-  },
+  ...defaultMetadata,
   other: {
     'theme-color': '#d4af37',
     'msapplication-TileColor': '#d4af37',
@@ -69,17 +26,6 @@ export const metadata: Metadata = {
     apple: '/logo.svg',
   },
   manifest: '/manifest.json',
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
 };
 
 export default function RootLayout({
@@ -90,6 +36,24 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLdOrganization),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLdWebSite),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLdTVSeries),
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
