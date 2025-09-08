@@ -12,7 +12,7 @@ export default function HomePage() {
   // Detroit Trending data - featuring Detroit-related content from our collection with varied view counts
   const detroitTrendingData = [
     {
-      id: "dt1",
+      id: "o6", // Using actual video ID from originals
       youTubeId: "_43zPH1YHeQ", 
       title: "PULSEBEAT WITH GREG DUNMORE: Jazz and the NAACP - Detroit's WJZZ and Freedom Fund Dinner",
       category: "originals",
@@ -20,7 +20,7 @@ export default function HomePage() {
       timeAgo: "30 minutes ago"
     },
     {
-      id: "dt2",
+      id: "c6", // Using actual video ID from celebrities
       youTubeId: "qJi5txQb0_o", 
       title: "George Benson Talks with Pulsebeat Media's Greg Dunmore at Detroit Jazz Fest",
       category: "celebrities",
@@ -28,7 +28,7 @@ export default function HomePage() {
       timeAgo: "1 hour ago"
     },
     {
-      id: "dt3",
+      id: "c4", // Using actual video ID from celebrities
       youTubeId: "5rTk7kh7JH8", 
       title: "Mike Epps Opens Up About Katt Williams at 'One Mike' Club Opening in Detroit",
       category: "celebrities",
@@ -36,7 +36,7 @@ export default function HomePage() {
       timeAgo: "2 hours ago"
     },
     {
-      id: "dt4", 
+      id: "o5", // Using actual video ID from originals
       youTubeId: "AWVCnsTa0-0",
       title: "PULSEBEAT WITH GREG DUNMORE: Investigating Elvis Presley - Award-Winning TV Show",
       category: "originals", 
@@ -44,7 +44,7 @@ export default function HomePage() {
       timeAgo: "5 hours ago"
     },
     {
-      id: "dt5",
+      id: "c5", // Using actual video ID from celebrities
       youTubeId: "eo84meCumuE", 
       title: "Jo Thompson Proves The Best Is Yet To Come - Forever Fabulous at 82",
       category: "celebrities",
