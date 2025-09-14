@@ -101,8 +101,8 @@ async function syncSpecificVideo(videoId: string, channelId: string) {
 
     const video = data.items[0];
     
-    // Import the sync logic from the sync route
-    const { categorizeVideo, generateTags, generateVideoId, formatDuration } = await import('../sync/route');
+    // Import the sync logic from the utilities
+    const { categorizeVideo, generateTags, generateVideoId, formatDuration } = await import('@/lib/youtube-utils');
     
     // Process the video (similar to sync route logic)
     const category = categorizeVideo(video);
