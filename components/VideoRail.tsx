@@ -116,7 +116,7 @@ export default function VideoRail({
         </div>
 
         {/* Grid Layout */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6 lg:gap-8">
           {enhancedItems.map((v, index) => (
             <VideoCard 
               key={v.id || v.youTubeId} 
@@ -193,8 +193,7 @@ export default function VideoRail({
       <div className="relative">
         <div 
           ref={scrollRef}
-          className="flex gap-4 lg:gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+          className="flex gap-4 lg:gap-6 xl:gap-8 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide"
         >
           {enhancedItems.map((v, index) => (
             <VideoCard 

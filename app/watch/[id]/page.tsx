@@ -24,7 +24,7 @@ export default function WatchPage({ params }: { params: { id: string } }) {
   
   return (
     <div className="min-h-screen bg-pb-white dark:bg-black pt-20 page-transition">
-      <div className="mx-auto max-w-5xl px-4 lg:px-8 py-8">
+      <div className="mx-auto max-w-7xl px-4 lg:px-8 py-8">
         <div className="aspect-video w-full rounded-xl overflow-hidden border border-pb-gray-300 dark:border-pb-gray-700 shadow-xl mb-6">
           <VideoPlayer youTubeId={video.youTubeId} title={video.title} />
         </div>

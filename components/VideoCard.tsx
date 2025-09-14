@@ -42,17 +42,17 @@ export default function VideoCard({
   const link = `/watch/${id || youTubeId}`;
   
   const sizeClasses = {
-    sm: "w-48",
-    md: "w-64", 
-    lg: "w-80",
-    featured: "w-full max-w-md"
+    sm: "w-56 sm:w-64",
+    md: "w-72 sm:w-80", 
+    lg: "w-80 sm:w-96",
+    featured: "w-full max-w-lg sm:max-w-xl"
   };
 
   const aspectClasses = {
-    sm: "h-32",
-    md: "h-36",
-    lg: "h-44",
-    featured: "h-56"
+    sm: "h-36 sm:h-40",
+    md: "h-44 sm:h-48",
+    lg: "h-52 sm:h-56",
+    featured: "h-64 sm:h-72"
   };
 
   // Generate varied duration based on video ID for consistency
