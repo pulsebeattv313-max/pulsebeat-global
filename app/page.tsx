@@ -16,9 +16,9 @@ export default function HomePage() {
   // Detroit Trending data - featuring Detroit-related content from our collection with varied view counts
   const detroitTrendingData = [
     {
-      id: "o6", // Using actual video ID from originals
-      youTubeId: "_43zPH1YHeQ", 
-      title: "PULSEBEAT WITH GREG DUNMORE: Jazz and the NAACP - Detroit's WJZZ and Freedom Fund Dinner",
+      id: "o13", // Using actual video ID from originals
+      youTubeId: "mmRsdjzflJE", 
+      title: "PULSEBEAT WITH GREG DUNMORE: 🔊 CREATIVE DETROITERS KNOW — VOTING IS A POWERFUL VOICE!",
       category: "originals",
       views: "4.1M",
       timeAgo: "30 minutes ago"
