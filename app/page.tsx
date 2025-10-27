@@ -1,3 +1,6 @@
+/// <reference types="react" />
+import React from "react";
+
 import Hero from "@/components/Hero";
 import VideoRail from "@/components/VideoRail";
 import TrendingSection from "@/components/TrendingSection";
